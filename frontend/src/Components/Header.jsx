@@ -6,12 +6,19 @@ function Header () {
         
         <Navbar variant='dark' sticky='top' bg='primary'>
             <Container>
+            
 
-                <Navbar.Brand href='/'>Hela Athkam</Navbar.Brand>
-                <Nav variant='pills'>
-                    <Nav.Link href='/'>Home</Nav.Link>
-                    <Nav.Link href='/about'>About</Nav.Link>
-                    <Nav.Link href='/contact'>Contact</Nav.Link>
+
+                
+                <Nav className='d-flex justify-content-center' variant='pills'>
+
+                    <Nav.Link className='me-5' href='/'>Home</Nav.Link>
+                    <Nav.Link className='mx-5' href='/about'>About</Nav.Link>
+                    <Nav.Link className='mx-5' href='/contact'>Contact</Nav.Link>
+                    <Nav.Link className='mx-5' href='/services'>Services</Nav.Link>
+                    <Nav.Link className='mx-5' href='/products'>Products</Nav.Link>
+                    <Nav.Link className='mx-5' href='/requestonline'>Request Online</Nav.Link>
+                    
                 </Nav>
 
             </Container>
