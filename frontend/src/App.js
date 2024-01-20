@@ -6,6 +6,7 @@ import About from "./Pages/About";
 import Services from "./Pages/Services";
 import Products from "./Pages/Products";
 import RequestOnline from "./Pages/RequestOnline";
+import JoinUs from "./Pages/JoinUs";
 import Contact from "./Pages/Contact";
 import { Navbar, Nav, Container } from "react-bootstrap";
 
@@ -16,7 +17,7 @@ function App() {
     <>
      <Navbar bg="light" expand="lg" className="" id="navbarMain"> 
 
-      <Navbar.Brand>Hela Athkam</Navbar.Brand>
+      <Navbar.Brand><h1>Hela Athkam</h1></Navbar.Brand>
       <Container>
         {/* First row content */}
         {/* Second row content */}
@@ -35,10 +36,11 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/services" element={<Services />} />
         <Route path="/products" element={<Products />} />
+        <Route path="/services" element={<Services />} />
         <Route path="/requestonline" element={<RequestOnline />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/joinus" element={<JoinUs />} />
 
       </Routes>
 
