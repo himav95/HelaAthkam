@@ -1,7 +1,7 @@
+import { useState } from 'react';
+import CraftsmanRequest from '../Forms/CraftsmanRequest';
 import Card from 'react-bootstrap/Card';
 import {Row, Col, Button} from 'react-bootstrap';
-import CraftsmanRequest from '../Forms/CraftsmanRequest';
-import { useState } from 'react';
 
 function JoinUs () {
 
