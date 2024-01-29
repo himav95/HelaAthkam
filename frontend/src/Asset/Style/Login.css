@@ -1,0 +1,31 @@
+/* login form content style. */
+.required {
+    color: red;
+}
+
+.loginModal {
+    border-radius: 0%;
+}
+
+#loginModalHeader {
+    border-style: none;
+    border-radius: 0%;
+}
+
+#loginModalBody {
+    height: 12cm;
+    border-radius: 0%;
+    border-style: none;
+}
+
+#loginButton {
+    height: 2cm;
+    width: 12cm;
+    color: white;
+    background-color: #176B87;
+}
+
+#loginModalFooter {
+    border-style: none;
+}
+

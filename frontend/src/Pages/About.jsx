@@ -1,14 +1,20 @@
-import { Container } from "react-bootstrap"
+import { Card, Container } from "react-bootstrap"
 
 function About () {
     return (
         <>
-        
-        <h2 className="mb-2">Echoes of Tradition, Crafted for Tomorrow: Hela Athkam</h2>
-        <h4 className="mb-5">Where Heritage Transcends Time, Passed Down for Generations to Cherish..</h4>
 
-        <Container id='about_content'>
-            <p>Step into a world where artistry meets tradition, and craftsmanship tells a story. 
+        
+        {/* about page headings */}
+       <Container>
+       <h2 className="mb-2">Echoes of Tradition, Crafted for Tomorrow: Hela Athkam</h2>
+        <h4 className="mb-5">Where Heritage Transcends Time, Passed Down for Generations to Cherish..</h4>
+       </Container>
+
+       {/* about page content para */}
+        <Card>
+
+        <p>Step into a world where artistry meets tradition, and craftsmanship tells a story. 
                 Hela Athkam is not just a handicraft shop; it's a celebration of heritage, creativity, 
                 and the skilled hands that bring our exquisite pieces to life.</p>
 
@@ -35,7 +41,9 @@ function About () {
 
             <p>Thank you for choosing Hela Athkam : where every creation is a masterpiece, 
                 and every purchase is a contribution to the legacy of handmade excellence. Explore, experience, and embrace the art of Hela Athkam.</p>
-        </Container>
+
+        </Card>
+            
         </>
     )
 }

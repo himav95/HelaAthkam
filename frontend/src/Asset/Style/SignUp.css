@@ -1,0 +1,27 @@
+/* sign up modal form content style. */
+.required {
+    color: red;
+}
+
+/* sign up modal style. */
+#signUpModal {
+    border-radius: 0%;
+    border-style: none ;
+}
+
+#signUpModalHeader {
+    border-radius: 0%;
+    border-style: none;
+}
+
+#signUpModalBody {
+    border-radius: 0%;
+    border-style: none;
+}
+
+#signUpButton {
+    height: 2cm;
+    width: 12cm;
+    color: white;
+    background-color: #176B87;
+}

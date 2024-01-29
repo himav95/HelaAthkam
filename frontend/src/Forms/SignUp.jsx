@@ -1,65 +1,73 @@
 import { Modal, Button } from 'react-bootstrap';
 import Form from 'react-bootstrap/Form';
-import {Card, Row, Col} from 'react-bootstrap';
+import {Row, Col} from 'react-bootstrap';
+import '../Asset/Style/SignUp.css';
 
-function SignUp ({ isModalOpen, closeSignModal }) {
+function SignUp ({ isModalOpen, closeSignModal}) {
   return (
     <>
     
-    <Modal show={isModalOpen} onHide={closeSignModal} backdrop="static" size='lg'>
-      <Modal.Header closeButton>
-        <Modal.Title>Welcome to Hela Athkam!</Modal.Title>
+    <Modal show={isModalOpen}
+           onHide={closeSignModal} 
+           backdrop="static" 
+           size='lg'
+           id='signUpModal'>
+
+      <Modal.Header id='signUpModalHeader' closeButton>
+        <Modal.Title><h2>Welcome Back!</h2></Modal.Title>
       </Modal.Header>
 
       {/* sign up form content */}
-      <Modal.Body>
-        <Card size='sm'>
-        <Form>
-            <Row>
-              {/* sign up name content */}
-              <Col>
-              <Form.Group className="mb-3" controlId="fullName">
-                <Form.Label>Full Name</Form.Label>
-                <Form.Control type="text" />
-              </Form.Group>
-              </Col>
+      <Modal.Body id='signUpModalBody'>
+        <Row className='mb-5'></Row>
 
-               {/* sign up email content  */}
-              <Col>
-              <Form.Group className="mb-3" controlId="email">
-                <Form.Label>Email</Form.Label>
-                <Form.Control type="email" />
+        {/* sign up form full name and email row. */}
+        <Row  className="mb-5">
+          <Col></Col>
+          {/* full name. */}
+          <Col xs={5}>
+          <Form.Group controlId="fullName">
+                <Form.Label>Full Name <Form.Label className='required'>*</Form.Label></Form.Label>
+                <Form.Control type="text" autoFocus />
               </Form.Group>
-              </Col>
-            </Row>
+          </Col>
 
-            <Row>
-              {/* sign up password content */}
-              <Col>
-              <Form.Group className="mb-3" controlId="password1">
-                <Form.Label>password</Form.Label>
+          {/* email. */}
+          <Col xs={5}>
+          <Form.Group controlId="email">
+                <Form.Label>Email <Form.Label className='required'>*</Form.Label></Form.Label>
+                <Form.Control type="email" placeholder='helaathkam@example.com'/>
+              </Form.Group>
+          </Col>
+          <Col></Col>
+        </Row>
+
+        {/* sign up form password and re-password. */}
+        <Row className="mb-5">
+          <Col></Col>
+          {/* password */}
+          <Col xs={5}>
+          <Form.Group controlId="password1">
+                <Form.Label>password <Form.Label className='required'>*</Form.Label></Form.Label>
                 <Form.Control type="password" />
               </Form.Group>
-              </Col>
-              
-              {/* sign up re-enter password content */}
-              <Col>
-              <Form.Group className="mb-3" controlId="password2">
-                <Form.Label>Re-Password</Form.Label>
+          </Col>
+
+          {/* re-password */}
+          <Col xs={5}>
+          <Form.Group controlId="password2">
+                <Form.Label>Re-Password <Form.Label className='required'>*</Form.Label></Form.Label>
                 <Form.Control type="password" />
               </Form.Group>
-              </Col>
-            </Row>
-        </Form>
-        </Card>
+          </Col>
+          <Col></Col>
+        </Row>
+
+        {/* sign up button. */}
+        <Row className='justify-content-center mb-5' > 
+        <Button variant="secondary"  onClick={closeSignModal} id='signUpButton'>Sign Up</Button>
+        </Row>
       </Modal.Body>
-      
-      <Modal.Footer>
-        <Button variant="secondary" onClick={closeSignModal}>
-          Close
-        </Button>
-        {/* Add additional buttons if needed */}
-      </Modal.Footer>
     </Modal>
     
     </>
