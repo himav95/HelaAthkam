@@ -1,12 +1,17 @@
 import { Modal, Button } from 'react-bootstrap';
 import Form from 'react-bootstrap/Form';
 import {Row, Col} from 'react-bootstrap';
-import '../Asset/Style/SignUp.css';
+import { InputGroup } from 'react-bootstrap';
+
+// import Hela athkam: form css file here.
+import '../Asset/Style/Helaathkam_Form.css';
+
 
 function SignUp ({ isModalOpen, closeSignModal}) {
   return (
     <>
     
+    {/* sign up modal */}
     <Modal show={isModalOpen}
            onHide={closeSignModal} 
            backdrop="static" 
@@ -14,10 +19,10 @@ function SignUp ({ isModalOpen, closeSignModal}) {
            id='signUpModal'>
 
       <Modal.Header id='signUpModalHeader' closeButton>
-        <Modal.Title><h2>Welcome Back!</h2></Modal.Title>
+        <Modal.Title><h2>Welcome to Hela Athkam!</h2></Modal.Title>
       </Modal.Header>
 
-      {/* sign up form content */}
+      {/* sign up form content within modal body. */}
       <Modal.Body id='signUpModalBody'>
         <Row className='mb-5'></Row>
 
@@ -26,18 +31,36 @@ function SignUp ({ isModalOpen, closeSignModal}) {
           <Col></Col>
           {/* full name. */}
           <Col xs={5}>
-          <Form.Group controlId="fullName">
-                <Form.Label>Full Name <Form.Label className='required'>*</Form.Label></Form.Label>
-                <Form.Control type="text" autoFocus />
-              </Form.Group>
+          <InputGroup className="mb-3">
+            <InputGroup.Text id="fullName">@</InputGroup.Text>
+            <Form.Control
+              placeholder="Enter your Full Name"
+              type="text"
+              aria-label="Username"
+              aria-describedby="fullName"
+            />
+          </InputGroup>
           </Col>
 
           {/* email. */}
           <Col xs={5}>
-          <Form.Group controlId="email">
-                <Form.Label>Email <Form.Label className='required'>*</Form.Label></Form.Label>
-                <Form.Control type="email" placeholder='helaathkam@example.com'/>
-              </Form.Group>
+          <InputGroup className="mb-3">
+            <InputGroup.Text id="email">@</InputGroup.Text>
+            <Form.Control
+              placeholder="Enter Your E-mail Address"
+              type="email"
+              aria-label="UserEmail"
+              aria-describedby="email"
+            />
+          </InputGroup>
+          <Form.Floating className="mb-3" size='sm'>
+          <Form.Control   
+          id="email"
+          type="email"
+          placeholder="name@example.com"
+          />
+          <label htmlFor="email">Email address</label>
+          </Form.Floating>
           </Col>
           <Col></Col>
         </Row>
@@ -47,18 +70,18 @@ function SignUp ({ isModalOpen, closeSignModal}) {
           <Col></Col>
           {/* password */}
           <Col xs={5}>
-          <Form.Group controlId="password1">
-                <Form.Label>password <Form.Label className='required'>*</Form.Label></Form.Label>
-                <Form.Control type="password" />
-              </Form.Group>
+          <Form.Floating className='mb-3'>
+            <Form.Control id='password1' type='password' placeholder='Enter password'/>
+            <label htmlFor='password1'>Password</label>
+          </Form.Floating>
           </Col>
 
           {/* re-password */}
           <Col xs={5}>
-          <Form.Group controlId="password2">
-                <Form.Label>Re-Password <Form.Label className='required'>*</Form.Label></Form.Label>
-                <Form.Control type="password" />
-              </Form.Group>
+          <Form.Floating className='mb-3'>
+            <Form.Control id='password2' type='password' placeholder='Enter password again'/>
+            <label htmlFor='password2'>Re-Password</label>
+          </Form.Floating>
           </Col>
           <Col></Col>
         </Row>

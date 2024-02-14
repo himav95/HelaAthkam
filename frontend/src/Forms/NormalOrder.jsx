@@ -1,26 +1,30 @@
+import { useState } from 'react';
 import { Modal, Card, Button } from 'react-bootstrap';
 import Form from 'react-bootstrap/Form';
 import {Row, Col} from 'react-bootstrap';
 import Toast from 'react-bootstrap/Toast';
-// link my NormalOrder.css file
-import '../Asset/Style/NormalOrder.css';
-import { useState } from 'react';
+
+// import Hela athkam: form css file here.
+import '../Asset/Style/Helaathkam_Form.css';
+
 
 function NormalOrder ({ isNormalModalOpen, closeNormalModal }) {
 
+  // Noice tost state and function.
   const [showToast, setShowToast] =  useState(true);
   const toggleShowToast = () => setShowToast(!showToast);
 
   return (
     <>
     
+    {/* Normal order modal */}
     <Modal show={isNormalModalOpen} onHide={closeNormalModal} backdrop="static" size='lg' centered>
       <Modal.Header id='normalOrderHeader' closeButton>
         <Modal.Title><h3>Order Request</h3></Modal.Title>
       </Modal.Header>
 
-      {/* Normal order form content */}
-      <Modal.Body>
+      {/* Normal order form content within modal body */}
+      <Modal.Body id='normalOrderBody'>
         <Row className='mb-3'><Col><h5>Customer Details</h5></Col></Row>
 
         {/* normal order form: customer details  */}
@@ -28,16 +32,16 @@ function NormalOrder ({ isNormalModalOpen, closeNormalModal }) {
           <Col></Col>
           {/* customer name */}
           <Col xs={4}>
-            <Form.Group ControlId="Name">
-              <Form.Label>Name <Form.Label className="required">*</Form.Label></Form.Label>
-              <Form.Control size='sm' type="text" autoFocus></Form.Control>
+            <Form.Group ControlId="name">
+              <Form.Label className='customLabel'>Name <Form.Label className="required">*</Form.Label></Form.Label>
+              <Form.Control  className='customControl' id='fullName' size='sm' type="text" autoFocus></Form.Control>
             </Form.Group>
           </Col>
 
           {/* customer email address */}
           <Col xs={4}>
             <Form.Group controlId='email'>
-              <Form.Label>Email <Form.Label className="required">*</Form.Label></Form.Label>
+              <Form.Label className='customLabel'>Email <Form.Label className="required">*</Form.Label></Form.Label>
               <Form.Control size='sm' type='email' placeholder='helaathkam@example.com'></Form.Control>
             </Form.Group>
           </Col>
@@ -49,7 +53,7 @@ function NormalOrder ({ isNormalModalOpen, closeNormalModal }) {
           <Col></Col>
           <Col xs={4}>
             <Form.Group ControlId='phoneNumber'>
-              <Form.Label>Phone Number <Form.Label className='required'>*</Form.Label></Form.Label>
+              <Form.Label className='customLabel'>Phone Number <Form.Label className='required'>*</Form.Label></Form.Label>
               <Form.Control size='sm' type='text'></Form.Control>
             </Form.Group>
           </Col>
@@ -60,14 +64,14 @@ function NormalOrder ({ isNormalModalOpen, closeNormalModal }) {
         <hr />
 
         {/* normal order form: order request details */}
-        <Row className='justify-content-center mb-3'><Col><h5>Order Details</h5></Col></Row>
+        <Row className='mb-3'><Col><h5>Order Details</h5></Col></Row>
         <Row className='mb-3'>
           <Col></Col>
 
           {/* product category */}
           <Col xs={4}>
             <Form.Group ControlId="ProdocutCategory">
-              <Form.Label>Product Category <Form.Label className='required'>*</Form.Label></Form.Label>
+              <Form.Label className='customLabel'>Product Category <Form.Label className='required'>*</Form.Label></Form.Label>
               <Form.Select size='sm' aria-label='categoryOptions'>
                 <option selected disabled>Select Category</option>
                 <option>Houseware</option>
@@ -81,7 +85,7 @@ function NormalOrder ({ isNormalModalOpen, closeNormalModal }) {
           {/* product */}
           <Col xs={4}>
             <Form.Group ControlId='Product'>
-              <Form.Label>Product <Form.Label className='required'>*</Form.Label></Form.Label>
+              <Form.Label className='customLabel'>Product <Form.Label className='required'>*</Form.Label></Form.Label>
               <Form.Select size='sm' aria-label='product'>
                 <option selected disabled>Select Product</option>
                 <option></option>
@@ -98,23 +102,28 @@ function NormalOrder ({ isNormalModalOpen, closeNormalModal }) {
           {/* quantity */}
           <Col xs={4}>
             <Form.Group ControlId="Quantity" className='mb-3'>
-              <Form.Label>Quantity <Form.Label className='required'>*</Form.Label></Form.Label>
+              <Form.Label className='customLabel'>Quantity <Form.Label className='required'>*</Form.Label></Form.Label>
               <Form.Control size='sm' type='text'></Form.Control>
             </Form.Group>
 
           {/* delivery date */}
           <Form.Group ControlId='deliveryDate'>
-              <Form.Label>delivery Date <Form.Label className='required'>*</Form.Label></Form.Label>
+              <Form.Label className='customLabel'>delivery Date <Form.Label className='required'>*</Form.Label></Form.Label>
               <Form.Control size='sm' type='date'></Form.Control>
             </Form.Group>
           </Col>
 
           {/* delivery option and notice toast. */}
           <Col xs={4}>
+           <Card id="deliveryOptionCard" className='justify-content-center'>
+            <Row></Row>
+            <Row className='mb-5'>
+            <Col></Col>
 
-            {/* Delivery Notice */}
-            <Toast onClose={toggleShowToast} show={showToast} animation={false} id='noticeToast'>
-              {/* delay={3600} autohide : using seems not okay?! */}
+            <Col xs={6}>
+               {/* Delivery Notice (shows upperside of the deliver option card) */}
+              <Toast onClose={toggleShowToast} show={showToast} animation={false} id='noticeToast' delay={7200} autohide>
+               {/* delay={3600} autohide : using seems not okay?! */}
                 <Toast.Header>
                   <img
                     src=""
@@ -127,22 +136,16 @@ function NormalOrder ({ isNormalModalOpen, closeNormalModal }) {
                 <Toast.Body>Hela Athkam delivery service is Only active within the City.</Toast.Body>
               </Toast>
 
-           <Card id="deliverCard" className='justify-content-center'>
-            <Row></Row>
-            <Row className='mb-5'>
-            <Col></Col>
-
-            <Col xs={6}>
               {/* pickup */}
               <Form.Group ControlId='deliverRadio1'  className='mb-3'>
                 <Form.Check type='radio' name='deliver' inline></Form.Check>
-                <Form.Label>Pick Up</Form.Label>
+                <Form.Label className='customLabel'>Pick Up</Form.Label>
               </Form.Group>
 
               {/* delivery */}
               <Form.Group controlId='deliverRadio2'>
                 <Form.Check type='radio' name='deliver'  onClick={toggleShowToast} inline></Form.Check>
-                <Form.Label>Delivery</Form.Label>
+                <Form.Label className='customLabel'>Delivery</Form.Label>
               </Form.Group>
             </Col>
             <Col></Col>
@@ -161,8 +164,6 @@ function NormalOrder ({ isNormalModalOpen, closeNormalModal }) {
           </Col>
         </Row>
       </Modal.Body>
-      
-      
     </Modal>
     
     </>

@@ -2,6 +2,10 @@ import { useState } from 'react';
 import CraftsmanRequest from '../Forms/CraftsmanRequest';
 import Card from 'react-bootstrap/Card';
 import {Row, Col, Button} from 'react-bootstrap';
+import{ Container} from 'react-bootstrap';
+
+// import Hela athkam: page css file here.
+import '../Asset/Style/Helaathkam_Page.css';
 
 function JoinUs () {
 
@@ -13,25 +17,72 @@ function JoinUs () {
 
     return (
         <>
+        
+        {/* join us page heading */}
+        <Row>
+            <Col></Col>
+            <Col xs={10}>
+                <h2 className='mb-2'>Attention independent craft makers!</h2>
+                <h5 className='mb-4'>We invite you to join hands with Hela Athkam, a place where Sri Lankan Craftmanship</h5>
+            </Col>
+            <Col></Col>
+        </Row>
 
-        <h1 className="mb-4">Join With Us..</h1>
-        <Card>
+        {/* join us page content */}
+        <Row className='mb-5'>
+            <Col></Col>
+            <Col xs={10}>
+            <Card id='joinUsCard'>
             <Card.Body>
-                <Row>
+                <Row className='mb-3'>
+                   <Col>
+                   <p>At Hela Athkam, we recognize the unique talents and passion that fuel your craft, 
+                    and we are committed to providing a supportive platform for you to showcase your creations to a wider audience.
+                    Whether you specialize in handmade bespoke home decor, or any other form of craftsmanship, Hela Athkam is the perfect place for you to connect, grow, 
+                    and thrive. Together, let's amplify the beauty of handmade creations and make a lasting impact in the world of independent craft.
+                    </p>
+                    </Col>
+                </Row>
 
+                <Row className='mb-5'>
+                    <Col>
+                    <p>Dear independent craft makers, embark on a journey with Hela Athkam and discover a thriving marketplace for your exquisite creations.
+                    Leave your worries behind, for at Hela Athkam, we provide a robust platform where your craftsmanship can truly flourish. Your unique creations 
+                    deserve recognition, and we are here to ensure they find the spotlight they deserve. We urge you not only to join us but also to extend this invitation 
+                    to fellow artisans in rural areas. Let us unite to preserve the rich traditional craftsmanship of Sri Lanka, ensuring it does not fade away. 
+                    Together, we can be the guardians of these age-old techniques and stories woven into each creation. Take our hand, and we'll guide you,
+                    clearing the path for a future where the beauty of traditional craftsmanship continues to captivate the world. Join Hela Athkam – where tradition
+                    meets innovation, and artisans shape their destiny.
+                    </p>
+                    </Col>
                 </Row>
 
                 {/* request form to join */}
                 <Row>
-                    <Col></Col>
                     <Col>
-                        <Button variant='outline-warning' size='lg' onClick={openRequestModal}>Request</Button>
+                        <Button size='lg' id='joinUsButton' onClick={openRequestModal}>Join Us Here</Button>
                         <CraftsmanRequest isRequestModalOpen={isRequestModalOpen} closeRequestModal={closeRequestModal}/>
                     </Col>
-                    <Col></Col>
                 </Row>
             </Card.Body>
         </Card>
+            </Col>
+            <Col></Col>
+        </Row>
+
+        {/* hela athkam image */}
+        <Container className='imageSet'>
+            <Card>
+        <Row className='justify-content-center'>
+            <Card.Img id='joinUsImg1' src='https://picsum.photos/200/300'  />
+                <Card.Img id='joinUsImg2' src='https://picsum.photos/200/300'  />
+                <Card.Img id='joinUsImg3' src='https://picsum.photos/200/300'/>
+                <Card.Img id='joinUsImg4' src='https://picsum.photos/200/300'  />
+
+                
+        </Row>
+            </Card>
+        </Container>
         
         </>
     )

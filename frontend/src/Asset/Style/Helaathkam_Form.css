@@ -1,0 +1,131 @@
+/* Hela athkam common form content style. */
+.required { color: red;}
+.customLabel {font-weight: 500;}
+.customControl { margin-top: 0.1cm;}
+
+/* -----Login form css----- */
+#loginModalHeader { 
+    border-style: none; 
+    border-radius: 0%; 
+}
+
+#loginModalBody { 
+    height: 12cm; 
+    border-radius: 0%; 
+    border-style: none; 
+}
+
+#loginButton { 
+    height: 2cm; 
+    width: 12cm; 
+    color: white; 
+    background-color: #176B87; 
+}
+
+#loginModalFooter { border-style: none; 
+}
+
+
+/* -----Sign-Up form css----- */
+#signUpModal { 
+    border-radius: 0%; 
+    border-style: none ; 
+}
+
+#signUpModalHeader { 
+    border-radius: 0%; 
+    border-style: none;
+}
+
+#signUpModalBody { 
+    border-radius: 0%; 
+    border-style: none; 
+}
+
+#signUpButton { 
+    height: 2cm; 
+    width: 12cm; 
+    color: white; 
+    background-color: #176B87; 
+}
+
+
+/* -----NormalOrder form css----- */
+#normalOrderHeader {
+    background-color: #025464;
+    color: white;
+}
+
+#deliveryOptionCard {
+    width: 8cm;
+    height: 5cm;
+    border-style: dashed;
+}
+
+#noticeToast {
+    width: 10cm;
+    background-color: #E8AA42;
+}
+
+#clearButton {
+    width: 5cm;
+    height: 1cm;
+    float: right;
+}
+
+#submitButton {
+    width: 5cm;
+    height: 1cm;
+    background-color: #176B87;
+    float: right;
+}
+
+
+
+/* -----CustomOrder form css----- */
+#customOrderHeader {
+    background-color: #025464;
+    color: white;
+}
+
+#clearButton {
+    width: 5cm;
+    height: 1cm;
+    float: right;
+}
+
+#submitButton {
+    width: 5cm;
+    height: 1cm;
+    background-color: #176B87;
+    float: right;
+}
+
+
+
+/* -----SpecialEdition form css----- */
+#specialEditionHeader {
+    background-color: #025464;
+    color: white;
+}
+
+#clearButton {
+    width: 5cm;
+    height: 1cm;
+    float: right;
+}
+
+#submitButton {
+    width: 5cm;
+    height: 1cm;
+    background-color: #176B87;
+    float: right;
+}
+
+
+
+/* -----Craftsman request form css----- */
+#craftsmanHeader {
+    background-color: #025464;
+    color: white;
+}

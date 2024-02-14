@@ -1,14 +1,17 @@
-
 import { Modal, Button } from 'react-bootstrap';
 import {Row, Col} from 'react-bootstrap';
 import Form from 'react-bootstrap/Form';
-import '../Asset/Style/Login.css';
+
+// import Hela athkam: form css file.
+import '../Asset/Style/Helaathkam_Form.css';
+
 
 
 function Login ({ isModalOpen, closeLoginModal}) {
   return (
     <>
     
+    {/* login modal */}
     <Modal show={isModalOpen}
            onHide={closeLoginModal} 
            backdrop="static"
@@ -17,10 +20,10 @@ function Login ({ isModalOpen, closeLoginModal}) {
            centered>
             
       <Modal.Header id='loginModalHeader' closeButton>
-        <Modal.Title><h2>Welcome to Hela Athkam!</h2></Modal.Title>
+        <Modal.Title><h2>Welcome back!</h2></Modal.Title>
       </Modal.Header>
 
-      {/* login form content */}
+      {/* login form content within modal body. */}
       <Modal.Body id='loginModalBody'>
         <Row className='mb-5'></Row>
 

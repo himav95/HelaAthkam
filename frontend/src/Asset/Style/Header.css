@@ -1,7 +1,14 @@
-#page_navbar {
-    background-color: #154360;
+/* Hela athkam Header.jsx styles */
+/* page navbar content */
+.mainNavLink {
+    color: #053B50;
 }
-
+.pageNavBar {background-color: #053B50;}
 .pageLink {
-    color: cyan;
+    color: rgb(255, 0, 0);
+    background-color: azure;
 }
+.pageLink:hover {color: aqua;}
+
+/* main navbar content */
+.mainNavBarBrand {color: #025464;}

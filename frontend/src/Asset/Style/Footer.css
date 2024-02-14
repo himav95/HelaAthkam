@@ -1,0 +1,18 @@
+/* hela athkam footer */
+#pageFooter {
+    border-style: none;
+    background-color: #053B50;
+    color: #3DBBB2 ;
+}
+
+.navLink2 {
+    color: #EEEEEE;
+}
+
+.navLink2:hover {
+    color: cyan;
+}
+
+.footerHeading {
+    color: #EBEDEF;
+}

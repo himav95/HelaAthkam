@@ -1,0 +1,83 @@
+/* -----Home page css----- */
+.caraouselBlock {
+    width: 25cm;
+    height: 15cm;
+}
+
+.caraousalImg {
+    width: 25cm;
+    height: 15cm;
+}
+
+/* -----Order-Online Page css----- */
+#normalOrderButton {
+    background-color: #176B87; 
+    width: 5cm; 
+    height: 1cm; 
+}
+
+#editionButton { 
+    background-color:#176B87; 
+    width: 5cm; 
+    height: 1cm; 
+}
+
+#customOrderButton {
+    background-color:#176B87;  
+    width: 5cm; 
+    height: 1cm; 
+}
+#editionCardFooter {
+    border-style: none;
+    background-color: white;
+}
+#customCardFooter {
+    border-style: none;
+    background-color: white;
+}
+
+
+/* -----Join Us page css----- */
+#joinUsCard {
+    border-style: none;
+}
+
+#joinUsButton {
+    height: 1.5cm;
+    width: 15cm;
+    background-color: #176B87;
+    border-color: #176B87;
+    color: white;
+    border-radius: 0%;
+    float: center;
+}
+
+#joinUsImg1 {
+    height: 5cm;
+    width: 8cm;
+}
+
+#joinUsImg2 {
+    height: 5cm;
+    width: 8cm;
+}
+
+#joinUsImg3 {
+    height: 5cm;
+    width: 8cm;
+}
+
+#joinUsImg4 {
+    height: 5cm;
+    width: 8cm;
+}
+
+.imageSet {
+    padding-bottom: "100rem";
+}
+
+/* -----About page css----- */
+#aboutContentCard {
+    border-style: none;
+}
+

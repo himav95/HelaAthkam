@@ -6,6 +6,11 @@ function Products () {
     return (
         <>
         
+        <Row className='mb-4'>
+            <Col></Col>
+            <Col xs={6} md={5} ><h4>Hela Athkam Handicrafts - Just for you</h4></Col>
+            <Col></Col>
+        </Row>
         {/* Main card content in product page */}
         <Card>
             <Card.Body>
@@ -27,15 +32,15 @@ function Products () {
 
                     {/* Product card 1 */}
                     <Col>
-                    <Card style={{ width: '18rem' }}>
-                        <Card.Img variant="top" src="holder.js/100px180" />
+                    <Card width={200} height={300} style={{maxWidth: 250}} >
+                        <Card.Img variant="top" width={200} height={200} src="https://picsum.photos/200/200" />
                         <Card.Body>
                             <Card.Title>Product 1</Card.Title>
                             <Card.Text>
                                 <p>describe the product 1</p>
                             </Card.Text>
 
-                            <ButtonGroup>
+                            <ButtonGroup style={{display: 'flex', justifyContent: 'center'}}>
                                     <Button variant="success">Buy Now</Button>
                                     <Button variant="warning">Add to Cart</Button>
                             </ButtonGroup>
@@ -43,111 +48,7 @@ function Products () {
                     </Card>
                     </Col>
 
-                    
-                    {/* product card 2 */}
-                    <Col>
-                    <Card style={{ width: '18rem' }}>
-                        <Card.Img variant="top" src="holder.js/100px180" />
-                        <Card.Body>
-                            <Card.Title>Product 2</Card.Title>
-                            <Card.Text>
-                                <p>describe the product 2</p>
-                            </Card.Text>
-
-                            <ButtonGroup>
-                                <Button variant="success">Buy Now</Button>
-                                <Button variant="warning">Add to Cart</Button>
-                            </ButtonGroup>
-                        </Card.Body>
-                    </Card>
-                    </Col>
-
-                    {/* product card 3 */}
-                    <Col>
-                    <Card style={{ width: '18rem' }}>
-                        <Card.Img variant="top" src="holder.js/100px180" />
-                        <Card.Body>
-                            <Card.Title>Product 3</Card.Title>
-                            <Card.Text>
-                                <p>describe the product 3</p>
-                            </Card.Text>
-
-                            <ButtonGroup>
-                                <Button variant="success">Buy Now</Button>
-                                <Button variant="warning">Add to Cart</Button>
-                            </ButtonGroup>
-                        </Card.Body>
-                    </Card>
-                    </Col>
-
                 </Row>
-
-
-                 {/* Product card set row 2 */}
-                <Row className='mb-5'>
-
-                    {/* product card 4 */}
-                    <Col>
-                    <Card style={{ width: '18rem' }}>
-                        <Card.Img variant="top" src="holder.js/100px180" />
-                        <Card.Body>
-                            <Card.Title>Product 4</Card.Title>
-                            <Card.Text>
-                                <p>describe the product 4</p>
-                            </Card.Text>
-
-                            <ButtonGroup>
-                                <Button variant="success">Buy Now</Button>
-                                <Button variant="warning">Add to Cart</Button>
-                            </ButtonGroup>
-                        </Card.Body>
-                    </Card>
-                    </Col>
-
-                    {/* product card 5 */}
-                    <Col>
-                    <Card style={{ width: '18rem' }}>
-                        <Card.Img variant="top" src="holder.js/100px180" />
-                        <Card.Body>
-                            <Card.Title>Product 5</Card.Title>
-                            <Card.Text>
-                                <p>describe the product 5</p>
-                            </Card.Text>
-
-                            <ButtonGroup>
-                                <Button variant="success">Buy Now</Button>
-                                <Button variant="warning">Add to Cart</Button>
-                            </ButtonGroup>
-                        </Card.Body>
-                    </Card>
-                    </Col>
-
-                    {/* product card 6 */}
-                    <Col>
-                    <Card style={{ width: '18rem' }}>
-                        <Card.Img variant="top" src="holder.js/100px180" />
-                        <Card.Body>
-                            <Card.Title>Product 6</Card.Title>
-                            <Card.Text>
-                                <p>describe the product 6</p>
-                            </Card.Text>
-
-                            <ButtonGroup>
-                                <Button variant="success">Buy Now</Button>
-                                <Button variant="warning">Add to Cart</Button>
-                            </ButtonGroup>
-                        </Card.Body>
-                    </Card>
-                    </Col>
-
-                </Row>
-
-                {/* product pagination */}
-                <Row>
-                    
-                </Row>
-
-                   
             </Card.Body>
         </Card>
         
