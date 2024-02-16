@@ -1,7 +1,10 @@
 /* Hela athkam common form content style. */
 .required { color: red;}
-.customLabel {font-weight: 500;}
+.customLabel {font-weight: 480;}
 .customControl { margin-top: 0.1cm;}
+
+
+
 
 /* -----Login form css----- */
 #loginModalHeader { 
@@ -24,6 +27,11 @@
 
 #loginModalFooter { border-style: none; 
 }
+
+
+
+
+
 
 
 /* -----Sign-Up form css----- */
@@ -50,7 +58,13 @@
 }
 
 
-/* -----NormalOrder form css----- */
+
+
+
+
+
+
+/* -----Basic Order form css----- */
 #normalOrderHeader {
     background-color: #025464;
     color: white;
@@ -67,18 +81,25 @@
     background-color: #E8AA42;
 }
 
-#clearButton {
+#basicClearButton {
     width: 5cm;
     height: 1cm;
+    background-color: #AEB6BF;
+    color: black;
     float: right;
 }
 
-#submitButton {
+#basicSubmitButton {
     width: 5cm;
     height: 1cm;
     background-color: #176B87;
     float: right;
 }
+
+
+
+
+
 
 
 
@@ -88,18 +109,27 @@
     color: white;
 }
 
-#clearButton {
+#customClearButton {
     width: 5cm;
     height: 1cm;
+    background-color: #AEB6BF;
+    color: black;
     float: right;
 }
 
-#submitButton {
+#customSubmitButton {
     width: 5cm;
     height: 1cm;
     background-color: #176B87;
     float: right;
 }
+
+
+
+
+
+
+
 
 
 
@@ -109,13 +139,15 @@
     color: white;
 }
 
-#clearButton {
+#editionClearButton {
     width: 5cm;
     height: 1cm;
+    background-color: #AEB6BF;
+    color: black;
     float: right;
 }
 
-#submitButton {
+#editionSubmitButton {
     width: 5cm;
     height: 1cm;
     background-color: #176B87;
@@ -124,8 +156,64 @@
 
 
 
+
+
+
+
+
+
+
 /* -----Craftsman request form css----- */
 #craftsmanHeader {
     background-color: #025464;
     color: white;
+}
+
+#craftClearButton {
+    width: 5cm;
+    height: 1cm;
+    background-color: #AEB6BF;
+    color: black;
+    float: right;
+}
+
+#craftSubmitButton {
+    width: 5cm;
+    height: 1cm;
+    background-color: #176B87;
+    float: right;
+}
+
+
+
+
+
+
+/* -----Contact Us page: Contact Form css----- */
+#clearfm {
+    width: 7rem;
+    height: 2.5rem;
+    background-color: #AEB6BF;
+    border-style: none;
+    color: black;
+    float: right;
+}
+
+#submitfm {
+    width: 7rem;
+    height: 2.5rem;
+    background-color: #176B87;
+    border-color: #176B87;
+    color: #efefef;
+    float: right;
+}
+
+#contactformHeading {
+    background-color: #176B87;
+    color: #efefef;
+}
+
+#contactForm {
+    border-style: outset;
+
 }

@@ -17,7 +17,7 @@ function CraftsmanRequest ({ isRequestModalOpen, closeRequestModal }) {
 
       {/* Craftsman request form content */}
       <Modal.Body>
-        <Row className='mb-3'><h5>Craft-Designer Details</h5></Row>
+        <Row className='mb-3'><h5 className='text-muted'>Craft-Designer Details</h5></Row>
 
         {/* Craftsman request form: Craft designer details. */}
         <Row className='mb-3'>
@@ -71,7 +71,7 @@ function CraftsmanRequest ({ isRequestModalOpen, closeRequestModal }) {
         <hr />
 
         {/* Craftsman's product details */}
-        <Row className='mb-2'><h5>Product Details</h5></Row>
+        <Row className='mb-2'><h5 className='text-muted'>Product Details</h5></Row>
 
         <Row className='mb-3'>
           <Col></Col>
@@ -125,8 +125,8 @@ function CraftsmanRequest ({ isRequestModalOpen, closeRequestModal }) {
         {/* Craftsman request form close and submit buttons. */}
         <Row>
         <Col>
-          <Button id='clearButton' variant='secondary' className='mx-5' onClick={closeRequestModal}>Close</Button>
-          <Button id='submitButton'>Submit</Button>
+          <Button id='craftClearButton' variant='secondary' className='mx-5' onClick={closeRequestModal}>Close</Button>
+          <Button id='craftSubmitButton'>Submit</Button>
           </Col>
         </Row>
       </Modal.Body>

@@ -38,7 +38,7 @@ function Footer () {
                     <Nav.Link className='navLink2' href='/products'>Products</Nav.Link>
                     <Nav.Link className='navLink2' href='/services'>Services</Nav.Link>
                     <Nav.Link className='navLink2' href='/orderonline'>Order Online</Nav.Link>
-                    <Nav.Link className='navLink2' href='/contactus'>Contact Us</Nav.Link>
+                    <Nav.Link className='navLink2' href='/contact'>Contact Us</Nav.Link>
                     <Nav.Link className='navLink2' href='/joinus'>Join Us</Nav.Link>
                 </Nav>
             </Col>

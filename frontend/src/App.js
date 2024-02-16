@@ -45,7 +45,7 @@ function App() {
     
     {/* Header.jsx pages nav routing */}
     <BrowserRouter>
-    <Container className="container-fluid vh-100" style={{marginTop:20}}>
+    <Container className="container-fluid" style={{marginTop:20}}>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

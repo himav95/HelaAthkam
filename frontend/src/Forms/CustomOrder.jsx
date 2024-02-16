@@ -18,7 +18,7 @@ function CustomOrder ({ isCustomModalOpen, closeCustomModal }) {
 
       {/* Custom order content within modal body. */}
       <Modal.Body>
-        <Row className='mb-3'><h5>Customer Details</h5></Row>
+        <Row className='mb-3'><h5 className='text-muted'>Customer Details</h5></Row>
 
         {/* Custom order form: Customer details */}
         <Row className='mb-3'>
@@ -57,7 +57,7 @@ function CustomOrder ({ isCustomModalOpen, closeCustomModal }) {
         <hr />
 
         {/* Custom order form: Order request details */}
-        <Row className='mb-3'><h5>Order Details</h5></Row>
+        <Row className='mb-3'><h5 className='text-muted'>Order Details</h5></Row>
         <Row className='mb-3'>
           <Col></Col>
 
@@ -109,8 +109,8 @@ function CustomOrder ({ isCustomModalOpen, closeCustomModal }) {
         {/* Custom order form close and submit buttons. */}
         <Row>
         <Col>
-          <Button id='clearButton' variant='secondary' className='mx-5' onClick={closeCustomModal}>Close</Button>
-          <Button id='submitButton'>Submit</Button>
+          <Button id='customClearButton' variant='secondary' className='mx-5' onClick={closeCustomModal}>Close</Button>
+          <Button id='customSubmitButton'>Submit</Button>
           </Col>
         </Row>
       </Modal.Body>

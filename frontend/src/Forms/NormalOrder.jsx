@@ -25,7 +25,7 @@ function NormalOrder ({ isNormalModalOpen, closeNormalModal }) {
 
       {/* Normal order form content within modal body */}
       <Modal.Body id='normalOrderBody'>
-        <Row className='mb-3'><Col><h5>Customer Details</h5></Col></Row>
+        <Row className='mb-3'><Col><h5 className='text-muted'>Customer Details</h5></Col></Row>
 
         {/* normal order form: customer details  */}
         <Row className='mb-3'>
@@ -64,7 +64,7 @@ function NormalOrder ({ isNormalModalOpen, closeNormalModal }) {
         <hr />
 
         {/* normal order form: order request details */}
-        <Row className='mb-3'><Col><h5>Order Details</h5></Col></Row>
+        <Row className='mb-3'><Col><h5 className='text-muted'>Order Details</h5></Col></Row>
         <Row className='mb-3'>
           <Col></Col>
 
@@ -159,8 +159,8 @@ function NormalOrder ({ isNormalModalOpen, closeNormalModal }) {
         {/* normal order form close and submit buttons. */}
         <Row>
           <Col>
-          <Button id='clearButton' variant='secondary' className='mx-5' onClick={closeNormalModal}>Close</Button>
-          <Button id='submitButton'>Submit</Button>
+          <Button id='basicClearButton' variant='secondary' className='mx-5' onClick={closeNormalModal}>Close</Button>
+          <Button id='basicSubmitButton'>Submit</Button>
           </Col>
         </Row>
       </Modal.Body>

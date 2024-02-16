@@ -34,12 +34,13 @@ function OrderOnline () {
         
         <h3 className='mb-5'>Place a product order...</h3>
         <p></p>
-        
+       <Container id='orderContainer'>
+         
         {/* order request accordion */}
         <Accordion>
             {/* normal order request accordion item */}
             <Accordion.Item eventKey='0'>
-                <Accordion.Header className='accordionOrder1'>Normal-Order</Accordion.Header>
+                <Accordion.Header className='accordionOrder1'>Basic Order</Accordion.Header>
                 <Accordion.Body>
                     <Container>
                         <Row>
@@ -63,7 +64,7 @@ function OrderOnline () {
                 
             {/* custom order request accordion item */}
             <Accordion.Item eventKey='1'>
-                <Accordion.Header>Custom-Order</Accordion.Header>
+                <Accordion.Header>Custom Order</Accordion.Header>
                 <Accordion.Body>
                     <Row className='mb-2'>
                         <Col>
@@ -131,6 +132,7 @@ function OrderOnline () {
             </Accordion.Item>
         </Accordion>
         
+       </Container>
         </>
     )
 }

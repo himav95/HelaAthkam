@@ -4,8 +4,11 @@ import Image1 from '../Asset/Images/Image1.jpg';
 import Image2 from '../Asset/Images/Image15.jpg';
 import Image3 from '../Asset/Images/Image10.jpg';
 
-// import Hela thkam: page css file here.
+
+// import Hela athkam: Page css file here.
 import '../Asset/Style/Helaathkam_Page.css';
+// import Hela athkam: Form css file here.
+import '../Asset/Style/Helaathkam_Form.css';
 
 
 function Home () {
@@ -61,7 +64,7 @@ function Home () {
         </Row>
         
         
-        
+       
         
         
         </>

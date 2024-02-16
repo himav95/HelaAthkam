@@ -1,14 +1,19 @@
 /* Hela athkam Header.jsx styles */
-/* page navbar content */
-.mainNavLink {
-    color: #053B50;
-}
-.pageNavBar {background-color: #053B50;}
-.pageLink {
-    color: rgb(255, 0, 0);
-    background-color: azure;
-}
-.pageLink:hover {color: aqua;}
 
-/* main navbar content */
+/* Page navbar content */
+.pageNavBar {background-color: #053B50;}
+#pageNavBarOnly {margin-bottom: 4rem;}
+
+.active-Link {color: aqua;}
+.pageLink {
+    color:#f3f3f3 !important;
+}
+.pageLink:hover {color: aqua !important;}
+
+
+
+
+/* Main navbar content */
 .mainNavBarBrand {color: #025464;}
+.mainNavLink { color: #053B50;}
+#mainNavbar {height: 8rem;}

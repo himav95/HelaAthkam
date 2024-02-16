@@ -19,7 +19,7 @@ function SignUp ({ isModalOpen, closeSignModal}) {
            id='signUpModal'>
 
       <Modal.Header id='signUpModalHeader' closeButton>
-        <Modal.Title><h2>Welcome to Hela Athkam!</h2></Modal.Title>
+        <Modal.Title><h2>First Visit to Hela Athkam?</h2></Modal.Title>
       </Modal.Header>
 
       {/* sign up form content within modal body. */}
@@ -38,6 +38,7 @@ function SignUp ({ isModalOpen, closeSignModal}) {
               type="text"
               aria-label="Username"
               aria-describedby="fullName"
+              autoFocus
             />
           </InputGroup>
           </Col>
@@ -53,14 +54,6 @@ function SignUp ({ isModalOpen, closeSignModal}) {
               aria-describedby="email"
             />
           </InputGroup>
-          <Form.Floating className="mb-3" size='sm'>
-          <Form.Control   
-          id="email"
-          type="email"
-          placeholder="name@example.com"
-          />
-          <label htmlFor="email">Email address</label>
-          </Form.Floating>
           </Col>
           <Col></Col>
         </Row>
@@ -70,18 +63,28 @@ function SignUp ({ isModalOpen, closeSignModal}) {
           <Col></Col>
           {/* password */}
           <Col xs={5}>
-          <Form.Floating className='mb-3'>
-            <Form.Control id='password1' type='password' placeholder='Enter password'/>
-            <label htmlFor='password1'>Password</label>
-          </Form.Floating>
+          <InputGroup className="mb-3">
+            <InputGroup.Text id="password1">@</InputGroup.Text>
+            <Form.Control
+              placeholder="Enter Password"
+              type="password"
+              aria-label="UserPwd1"
+              aria-describedby="password1"
+            />
+          </InputGroup>
           </Col>
 
           {/* re-password */}
           <Col xs={5}>
-          <Form.Floating className='mb-3'>
-            <Form.Control id='password2' type='password' placeholder='Enter password again'/>
-            <label htmlFor='password2'>Re-Password</label>
-          </Form.Floating>
+          <InputGroup className="mb-3">
+            <InputGroup.Text id="password2">@</InputGroup.Text>
+            <Form.Control
+              placeholder="Re-Enter Password"
+              type="password"
+              aria-label="UserPwd2"
+              aria-describedby="password2"
+            />
+          </InputGroup>
           </Col>
           <Col></Col>
         </Row>

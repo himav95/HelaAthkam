@@ -19,7 +19,7 @@ function JoinUs () {
         <>
         
         {/* join us page heading */}
-        <Row>
+        <Row className='mb-4'>
             <Col></Col>
             <Col xs={10}>
                 <h2 className='mb-2'>Attention independent craft makers!</h2>
@@ -44,7 +44,7 @@ function JoinUs () {
                     </Col>
                 </Row>
 
-                <Row className='mb-5'>
+                <Row className='componentSpace'>
                     <Col>
                     <p>Dear independent craft makers, embark on a journey with Hela Athkam and discover a thriving marketplace for your exquisite creations.
                     Leave your worries behind, for at Hela Athkam, we provide a robust platform where your craftsmanship can truly flourish. Your unique creations 
@@ -54,6 +54,9 @@ function JoinUs () {
                     clearing the path for a future where the beauty of traditional craftsmanship continues to captivate the world. Join Hela Athkam – where tradition
                     meets innovation, and artisans shape their destiny.
                     </p>
+                    <p>Are you a passionate local craft maker looking to showcase your creations to a broader audience? At Hela Athkam, 
+                        we invite you to become a part of our vibrant community of artisans. We celebrate the unique and diverse talents of local 
+                        independent craft makers, and we're dedicated to providing a platform that amplifies your artistry.</p>
                     </Col>
                 </Row>
 
@@ -71,18 +74,16 @@ function JoinUs () {
         </Row>
 
         {/* hela athkam image */}
-        <Container className='imageSet'>
-            <Card>
-        <Row className='justify-content-center'>
-            <Card.Img id='joinUsImg1' src='https://picsum.photos/200/300'  />
+        
+        <Container id='joinUsImageSet'>
+            <Row className='justify-content-center'>
+                <Card.Img id='joinUsImg1' src='https://picsum.photos/200/300'  />
                 <Card.Img id='joinUsImg2' src='https://picsum.photos/200/300'  />
                 <Card.Img id='joinUsImg3' src='https://picsum.photos/200/300'/>
                 <Card.Img id='joinUsImg4' src='https://picsum.photos/200/300'  />
-
-                
-        </Row>
-            </Card>
+            </Row>
         </Container>
+        
         
         </>
     )

@@ -18,7 +18,7 @@ function SpecialEdit ({ isEditionModalOpen, closeEditionModal }) {
 
       {/* Special edition request content within modal body. */}
       <Modal.Body>
-        <Row className='mb-3'><h5>Customer Details</h5></Row>
+        <Row className='mb-3'><h5 className='text-muted'>Customer Details</h5></Row>
 
         {/* special edition request form: Customer details */}
         <Row className='mb-3'>
@@ -57,7 +57,7 @@ function SpecialEdit ({ isEditionModalOpen, closeEditionModal }) {
         <hr />
 
         {/* Special edition form: Request details */}
-        <Row className='mb-3'><h5>Request Details</h5></Row>
+        <Row className='mb-3'><h5 className='text-muted'>Request Details</h5></Row>
 
         {/* Select the product; up for the change */}
         <Row className='mb-3'>
@@ -128,8 +128,8 @@ function SpecialEdit ({ isEditionModalOpen, closeEditionModal }) {
         {/* Special edition form close and submit buttons. */}
         <Row>
         <Col>
-          <Button id='clearButton' variant='secondary' className='mx-5' onClick={closeEditionModal}>Close</Button>
-          <Button id='submitButton'>Submit</Button>
+          <Button id='editionClearButton' variant='secondary' className='mx-5' onClick={closeEditionModal}>Close</Button>
+          <Button id='editionSubmitButton'>Submit</Button>
           </Col>
         </Row>
       </Modal.Body>

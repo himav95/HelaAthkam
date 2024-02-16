@@ -2,17 +2,17 @@
 #pageFooter {
     border-style: none;
     background-color: #053B50;
-    color: #3DBBB2 ;
+    color: #D6DBDF ;
 }
 
 .navLink2 {
-    color: #EEEEEE;
+    color: #D5D8DC;
 }
 
 .navLink2:hover {
-    color: cyan;
+    color: cyan !important;
 }
 
 .footerHeading {
-    color: #EBEDEF;
+    color: #D6DBDF ;
 }

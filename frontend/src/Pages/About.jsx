@@ -1,13 +1,16 @@
 import { Card } from "react-bootstrap";
 import { Row, Col } from 'react-bootstrap';
 
+// import Hela athkam: Page css file here.
+import '../Asset/Style/Helaathkam_Page.css';
+
 function About () {
     return (
         <>
 
         
         {/* about page headings */}
-        <Row >
+        <Row className="mb-4">
             <Col></Col>
             <Col xs={10}>
             <h2 className="mb-2">Echoes of Tradition, Crafted for Tomorrow: Hela Athkam</h2>
@@ -17,7 +20,7 @@ function About () {
         </Row>
 
        {/* about page content para */}
-        <Row>
+        <Row className="componentSpace">
         <Col></Col>
         <Col xs={10}>
         <Card id="aboutContentCard">

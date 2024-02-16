@@ -1,6 +1,7 @@
 import { Modal, Button } from 'react-bootstrap';
 import {Row, Col} from 'react-bootstrap';
 import Form from 'react-bootstrap/Form';
+import { InputGroup } from 'react-bootstrap';
 
 // import Hela athkam: form css file.
 import '../Asset/Style/Helaathkam_Form.css';
@@ -20,7 +21,7 @@ function Login ({ isModalOpen, closeLoginModal}) {
            centered>
             
       <Modal.Header id='loginModalHeader' closeButton>
-        <Modal.Title><h2>Welcome back!</h2></Modal.Title>
+        <Modal.Title><h2>Welcome back!</h2><h6>Login and Rediscover what awaits you at Hela Athkam.</h6></Modal.Title>
       </Modal.Header>
 
       {/* login form content within modal body. */}
@@ -31,10 +32,16 @@ function Login ({ isModalOpen, closeLoginModal}) {
         <Row className="mb-4">
           <Col></Col>
           <Col xs={6}>
-              <Form.Group controlId="email">
-                <Form.Label>Email <Form.Label className='required'>*</Form.Label></Form.Label>
-                <Form.Control type="email" placeholder='helaathkam@example.com' autoFocus/>
-              </Form.Group>
+          <InputGroup className="mb-3">
+            <InputGroup.Text id="email">@</InputGroup.Text>
+            <Form.Control
+              placeholder="Enter Your E-mail Address"
+              type="email"
+              aria-label="UserEmail"
+              aria-describedby="email"
+              autoFocus
+            />
+          </InputGroup>
               </Col>
           <Col></Col>
         </Row> 
@@ -43,10 +50,15 @@ function Login ({ isModalOpen, closeLoginModal}) {
         <Row className="mb-5">
           <Col></Col>
           <Col xs={6}>
-          <Form.Group controlId="password1">
-                <Form.Label>password <Form.Label className='required'>*</Form.Label></Form.Label>
-                <Form.Control type="password" />
-              </Form.Group>
+          <InputGroup className="mb-3">
+            <InputGroup.Text id="password1">@</InputGroup.Text>
+            <Form.Control
+              placeholder="Enter Your Password"
+              type="password"
+              aria-label="UserPwd1"
+              aria-describedby="password1"
+            />
+          </InputGroup>
           </Col>
           <Col></Col>
         </Row>
