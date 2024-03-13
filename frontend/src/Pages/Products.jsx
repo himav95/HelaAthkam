@@ -11,13 +11,13 @@ function Products () {
     return (
         <>
         
-        <Row className='mb-4'>
+        <Row className='mb-5'>
             <Col></Col>
             <Col xs={6} md={5} ><h4>Hela Athkam Handicrafts - Just for you</h4></Col>
             <Col></Col>
         </Row>
         {/* Main card content in product page */}
-        <Card>
+        <Card className='componentSpace' id='productsContain'>
             <Card.Body>
 
                 {/* Product category select */}

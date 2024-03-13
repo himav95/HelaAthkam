@@ -11,10 +11,10 @@ function Header ({openLoginModal, openSignModal}) {
         {/* Main navbar with name, sign up and login */}
         <Navbar bg="light" expand="lg" className="d-flex justify-content-between" id="mainNavbar"> 
            <Container>
-           <Navbar.Brand><h1>Hela Athkam</h1></Navbar.Brand>
+           <Navbar.Brand id='mainBrand'><h1>Hela Athkam</h1></Navbar.Brand>
             <Nav>
-                <Nav.Link className="mx-auto" onClick={openSignModal}><b>Sign Up</b></Nav.Link>
-                <Nav.Link  className="mx-auto" onClick={openLoginModal}><b>Login</b></Nav.Link>
+                <Nav.Link className="mainNavlink" onClick={openSignModal}><b>Sign Up</b></Nav.Link>
+                <Nav.Link  className="mainNavlink" onClick={openLoginModal}><b>Login</b></Nav.Link>
             </Nav>
            </Container>
         </Navbar>

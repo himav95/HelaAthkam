@@ -36,6 +36,20 @@
 
 
 
+
+/* ------Products page css----- */
+#productsContain {
+    background-color: #EBEDEF;
+    border-style: none;
+}
+
+
+
+
+
+
+
+
 /* -----Order-Online Page css----- */
 #orderContainer {
     height: 30rem;

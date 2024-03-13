@@ -1,6 +1,6 @@
 import Carousel from 'react-bootstrap/Carousel';
 import { Row, Col  } from 'react-bootstrap';
-import Image1 from '../Asset/Images/Image1.jpg';
+import Image14 from '../Asset/Images/Image14.jpg';
 import Image2 from '../Asset/Images/Image15.jpg';
 import Image3 from '../Asset/Images/Image10.jpg';
 
@@ -34,7 +34,7 @@ function Home () {
             <Carousel className='caraouselBlock'>
             {/* first carousel slide */}
             <Carousel.Item interval={2500}>
-                <img className="caraousalImg" src={`${Image1}`} alt="First slide" />
+                <img className="caraousalImg" src={`${Image14}`} alt="First slide" />
                 <Carousel.Caption>
                     <h3></h3>
                     <p></p>
