@@ -1,0 +1,173 @@
+/* -----Home page css----- */
+.caraouselBlock {
+    width: 80rem;
+    height: 35rem;
+}
+
+.caraousalImg {
+    width:80rem;
+    height: 35rem;
+}
+
+
+
+
+
+
+/* -----Service Page css----- */
+.serviceImgz {
+    height: 10rem;
+    width: 10rem;
+}
+
+.serviceCardz {
+    border-style: none !important ;
+    margin-bottom: 5rem;
+}
+
+.serviceHeadings {
+    color: #2E4053 ;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+/* ------Products page css----- */
+#productsContain {
+    background-color: #EBEDEF;
+    border-style: none;
+}
+
+
+
+
+
+
+
+
+/* -----Order-Online Page css----- */
+#orderContainer {
+    height: 30rem;
+}
+#normalOrderButton {
+    width: 15rem; 
+    height: 3rem; 
+    background-color: #176B87; 
+}
+
+#editionButton { 
+    width: 15rem; 
+    height: 3rem; 
+    background-color:#176B87; 
+}
+
+#customOrderButton {
+    width: 15rem; 
+    height: 3rem; 
+    background-color:#176B87;  
+}
+#editionCardFooter {
+    border-style: none;
+    background-color: white;
+}
+#customCardFooter {
+    border-style: none;
+    background-color: white;
+}
+
+
+
+
+
+
+/* -----Contact us page css----- */
+#contactInfoSRowspace {
+    margin-bottom: 3rem;
+}
+
+
+/* -----Join Us page css----- */
+#joinUsCard {
+    border-style: none;
+}
+
+#joinUsButton {
+    height: 3rem;
+    width: 30rem;
+    background-color: #176B87;
+    border-color: #176B87;
+    color: white;
+    border-radius: 0%;
+    float: center;
+    margin-bottom: 3rem;
+}
+
+#joinUsImg1 {
+    height: 15rem;
+    width: 20rem;
+    border-style: none;
+}
+
+#joinUsImg2 {
+    height: 15rem;
+    width: 20rem;
+    border-style: none;
+}
+
+#joinUsImg3 {
+    height: 15rem;
+    width: 20rem;
+    border-style: none;
+}
+
+#joinUsImg4 {
+    height: 15rem;
+    width: 20rem;
+    border-style: none;
+}
+
+#joinUsImageSet {
+    margin-bottom: 10rem;
+    border-style: none;
+}
+
+
+
+
+
+
+
+
+/* -----About page css----- */
+#aboutContentCard {
+    border-style: none;
+}
+
+
+
+
+
+/* -----Admin Dashboard css is here.----- */
+#adminHeader {
+    color: #176B87;
+    height: 4rem;
+}
+
+
+
+
+
+/* Common styles throught web pages. */
+.componentSpace {
+    margin-bottom: 5rem;
+}
+
+
+.active-Link {
+    color: red;
+}
