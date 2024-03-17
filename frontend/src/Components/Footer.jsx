@@ -4,6 +4,7 @@ import Form from 'react-bootstrap/Form';
 
 // import footer css file here.
 import '../Asset/Style/Footer.css';
+import { EnvelopeAt, GeoAlt, Telephone } from "react-bootstrap-icons";
 
 
 function Footer () {
@@ -57,8 +58,8 @@ function Footer () {
                 <p>No.35,</p>
                 <p>Galle Road,</p>
                 <p>Matara.</p>
-                <p>Contact No. 041 3356789</p>
-                <p>Email us. helaathkam@gmail.com</p>
+                <p><Telephone size={15} color="#efefef" /> : 041 3356789</p>
+                <p><EnvelopeAt size={15} color="#efefef" /> : helaathkam@gmail.com</p>
             </Col>
             <Col></Col>
         </Row>

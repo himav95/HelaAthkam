@@ -30,7 +30,7 @@ function Contact () {
 
                     <Row id='contactInfoSRowspace'>
                        <Col>
-                        <h6> Call Us: +94 41 27567/9</h6>
+                        <h6>Call Us: +94 41 27567/9</h6>
                         <h6>Email: helaathkam@lankan.lk</h6>
                        </Col>
                     </Row>

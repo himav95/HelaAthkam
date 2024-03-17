@@ -2,6 +2,7 @@ import { Modal, Button } from 'react-bootstrap';
 import Form from 'react-bootstrap/Form';
 import {Row, Col} from 'react-bootstrap';
 import { InputGroup } from 'react-bootstrap';
+import {EnvelopeAt, Key, Person} from 'react-bootstrap-icons';
 
 // import Hela athkam: form css file here.
 import '../Asset/Style/Helaathkam_Form.css';
@@ -32,7 +33,7 @@ function SignUp ({ isModalOpen, closeSignModal}) {
           {/* full name. */}
           <Col xs={5}>
           <InputGroup className="mb-3">
-            <InputGroup.Text id="fullName">@</InputGroup.Text>
+            <InputGroup.Text id="fullName"><Person size={25} color="black" /></InputGroup.Text>
             <Form.Control
               placeholder="Enter your Full Name"
               type="text"
@@ -46,7 +47,7 @@ function SignUp ({ isModalOpen, closeSignModal}) {
           {/* email. */}
           <Col xs={5}>
           <InputGroup className="mb-3">
-            <InputGroup.Text id="email">@</InputGroup.Text>
+            <InputGroup.Text id="email"><EnvelopeAt size={20} color="black" /></InputGroup.Text>
             <Form.Control
               placeholder="Enter Your E-mail Address"
               type="email"
@@ -64,7 +65,7 @@ function SignUp ({ isModalOpen, closeSignModal}) {
           {/* password */}
           <Col xs={5}>
           <InputGroup className="mb-3">
-            <InputGroup.Text id="password1">@</InputGroup.Text>
+            <InputGroup.Text id="password1"><Key size={20} color='black' /></InputGroup.Text>
             <Form.Control
               placeholder="Enter Password"
               type="password"
@@ -77,7 +78,7 @@ function SignUp ({ isModalOpen, closeSignModal}) {
           {/* re-password */}
           <Col xs={5}>
           <InputGroup className="mb-3">
-            <InputGroup.Text id="password2">@</InputGroup.Text>
+            <InputGroup.Text id="password2"><Key size={20} color='black' /></InputGroup.Text>
             <Form.Control
               placeholder="Re-Enter Password"
               type="password"

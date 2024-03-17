@@ -38,6 +38,8 @@
 #signUpModal { 
     border-radius: 0%; 
     border-style: none ; 
+    width: 70rem;
+    height: 80rem;
 }
 
 #signUpModalHeader { 

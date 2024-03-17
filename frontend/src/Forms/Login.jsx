@@ -2,6 +2,10 @@ import { Modal, Button } from 'react-bootstrap';
 import {Row, Col} from 'react-bootstrap';
 import Form from 'react-bootstrap/Form';
 import { InputGroup } from 'react-bootstrap';
+import {EnvelopeAt, Key} from 'react-bootstrap-icons';
+// For form management and data validation import - formik yup.
+
+
 
 // import Hela athkam: form css file.
 import '../Asset/Style/Helaathkam_Form.css';
@@ -33,7 +37,7 @@ function Login ({ isModalOpen, closeLoginModal}) {
           <Col></Col>
           <Col xs={6}>
           <InputGroup className="mb-3">
-            <InputGroup.Text id="email">@</InputGroup.Text>
+            <InputGroup.Text id="email"><EnvelopeAt size={20} color="black" /></InputGroup.Text>
             <Form.Control
               placeholder="Enter Your E-mail Address"
               type="email"
@@ -51,7 +55,7 @@ function Login ({ isModalOpen, closeLoginModal}) {
           <Col></Col>
           <Col xs={6}>
           <InputGroup className="mb-3">
-            <InputGroup.Text id="password1">@</InputGroup.Text>
+            <InputGroup.Text id="password1"><Key size={20} color='black' /></InputGroup.Text>
             <Form.Control
               placeholder="Enter Your Password"
               type="password"
