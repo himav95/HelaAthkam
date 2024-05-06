@@ -1,6 +1,7 @@
 import { Modal, Button } from 'react-bootstrap';
 import {Row, Col} from 'react-bootstrap';
 import Form from 'react-bootstrap/Form';
+import Nav from 'react-bootstrap/Nav';
 import { InputGroup } from 'react-bootstrap';
 import {EnvelopeAt, Key} from 'react-bootstrap-icons';
 // For form management and data validation import - formik yup.
@@ -12,7 +13,7 @@ import '../Asset/Style/Helaathkam_Form.css';
 
 
 
-function Login ({ isModalOpen, closeLoginModal}) {
+function Login ({ isModalOpen, closeLoginModal, openSignModal}) {
   return (
     <>
     
@@ -76,9 +77,7 @@ function Login ({ isModalOpen, closeLoginModal}) {
       <Modal.Footer id='loginModalFooter'>
          {/* link to sign up form. */}
          <Row>
-          <Form.Label><i className='text-muted'>First visit to Hela Athlam?
-            
-            here.</i>
+          <Form.Label className='text-muted'>First visit to Hela Athlam?<Nav><Nav.Link onClick={openSignModal}>Sign Up</Nav.Link></Nav>here.
           </Form.Label>
         </Row>
 
