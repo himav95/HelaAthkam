@@ -32,6 +32,8 @@ function App() {
 
   return (
     <>
+   {/* BrowserRouter/ Router; problem occured. instead of wrapping only the Routes container whole app had to be wrapped in. */}
+    <BrowserRouter> 
 
     {/* sign and login modal */}
     <Header openLoginModal={openLoginModal} openSignModal={openSignModal}/>
@@ -44,7 +46,6 @@ function App() {
 
     
     {/* Header.jsx pages nav routing */}
-    <BrowserRouter>
     <Container className="container-fluid" style={{marginTop:20}}>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -56,10 +57,10 @@ function App() {
         <Route path="/joinus" element={<JoinUs />} /> 
       </Routes>
     </Container>
-    </BrowserRouter>
 
     <Footer />
-
+    </BrowserRouter>
+   
     </>
   );
 }

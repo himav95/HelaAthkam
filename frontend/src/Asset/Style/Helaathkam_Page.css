@@ -1,14 +1,33 @@
+/* Common styles throught web pages. */
+.componentSpace { margin-bottom: 8rem;}
+.rowMargin { margin-bottom: 5rem;}
+.active-Link { color: red; }
+
+
+
+
+
+
 /* -----Home page css----- */
-.caraouselBlock {
-    width: 80rem;
-    height: 35rem;
-}
+/* .backgroundImageContainer {
+    background-image: url('../Asset/Images/backgroundImage1.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+} */
+#carouselBlock {width: 45rem; height: 29rem;} 
+#carouselMini1 {width: 18rem; height: 11rem;}
+#carouselMini2 {width: 18rem; height: 11rem;}
+#carouselMini3 {width: 18rem; height: 11rem;}
+#carouselMini4 {width: 18rem; height: 11rem;}
 
-.caraousalImg {
-    width:80rem;
-    height: 35rem;
-}
 
+
+.carousellg {width:45rem; height: 29rem;}
+.imageFirst {width: 18rem; height: 11rem;}
+.carouselSecond {width: 18rem; height: 11rem;}
+.carouselThird {width: 18rem; height: 11rem;}
+.carouselFourth {width: 18rem; height: 11rem;}
 
 
 
@@ -109,25 +128,25 @@
 
 #joinUsImg1 {
     height: 15rem;
-    width: 20rem;
+    width: 18rem;
     border-style: none;
 }
 
 #joinUsImg2 {
     height: 15rem;
-    width: 20rem;
+    width: 18rem;
     border-style: none;
 }
 
 #joinUsImg3 {
     height: 15rem;
-    width: 20rem;
+    width: 18rem;
     border-style: none;
 }
 
 #joinUsImg4 {
     height: 15rem;
-    width: 20rem;
+    width: 18rem;
     border-style: none;
 }
 
@@ -162,12 +181,3 @@
 
 
 
-/* Common styles throught web pages. */
-.componentSpace {
-    margin-bottom: 5rem;
-}
-
-
-.active-Link {
-    color: red;
-}

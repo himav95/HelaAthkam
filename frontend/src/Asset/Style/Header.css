@@ -3,11 +3,15 @@
 
 
 
-/* Page navbar content */
+/* ------Page navbar content------ */
 .pageNavBar {background-color: #053B50;}
 #pageNavBarOnly {margin-bottom: 4rem;}
 
-.active-Link {color: aqua;}
+/* Active link css of page navbar links. */
+.nav-pills .nav-link.active { 
+    background-color: #A2D9CE !important;
+    color: black !important;
+}
 
 .pageLink {
     color:#f3f3f3 !important;
@@ -20,7 +24,7 @@
 
 
 
-/* Main navbar content */
+/* ------Main navbar content------ */
 #mainBrand {color: #025464;}
 
 .mainNavlink { 
@@ -32,4 +36,4 @@
     color: rgb(255, 213, 0) !important;
 }
 
-#mainNavbar {height: 8rem;}
+#mainNavbar {height: 5rem;}

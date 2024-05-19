@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import CraftsmanRequest from '../Forms/CraftsmanRequest';
+import CraftsmanRequest from '../Forms/CraftsmanRequest'; // import CraftsmanRequest form from Forms.
 import Card from 'react-bootstrap/Card';
 import {Row, Col, Button} from 'react-bootstrap';
 import{ Container} from 'react-bootstrap';
@@ -64,6 +64,7 @@ function JoinUs () {
                 <Row>
                     <Col>
                         <Button size='lg' id='joinUsButton' onClick={openRequestModal}>Join Us Here</Button>
+                        {/* renders the craftsmanrequest and passsing the two props. */}
                         <CraftsmanRequest isRequestModalOpen={isRequestModalOpen} closeRequestModal={closeRequestModal}/>
                     </Col>
                 </Row>

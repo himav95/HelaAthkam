@@ -98,7 +98,7 @@ function Contact () {
                         {/* contact form buttons */}
                         <Row className='mb-3'>
                             <Col>
-                            <Button id='clearfm' className='mx-5'>Close</Button>
+                            <Button id='clearfm' className='mx-5'>Clear</Button>
                             <Button id='submitfm'>Submit</Button>
                             </Col>
                         </Row>
