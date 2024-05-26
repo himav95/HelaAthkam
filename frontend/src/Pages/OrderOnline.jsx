@@ -40,7 +40,7 @@ function OrderOnline () {
         <Accordion>
             {/* normal order request accordion item */}
             <Accordion.Item eventKey='0'>
-                <Accordion.Header className='accordionOrder1'>Basic Order</Accordion.Header>
+                <Accordion.Header className='accordionOrder1'>Normal Order</Accordion.Header>
                 <Accordion.Body>
                     <Container>
                         <Row>

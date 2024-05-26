@@ -66,7 +66,7 @@
 
 
 
-/* -----Basic Order form css----- */
+/* -----Normal Order form css----- */
 #normalOrderHeader {
     background-color: #025464;
     color: white;
@@ -83,7 +83,7 @@
     background-color: #E8AA42;
 }
 
-#basicClearButton {
+#normalClearButton {
     width: 5cm;
     height: 1cm;
     background-color: #AEB6BF;
@@ -91,7 +91,7 @@
     float: right;
 }
 
-#basicSubmitButton {
+#normalSubmitButton {
     width: 5cm;
     height: 1cm;
     background-color: #176B87;

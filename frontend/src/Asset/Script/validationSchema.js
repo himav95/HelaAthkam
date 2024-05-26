@@ -1,7 +1,7 @@
 // for data validation - yup.
 import * as Yup from 'yup';
 
-// Common validation schemas for shared form fields.
+// Common feild validation schemas for shared form fields.
 const commonValidations = {
     email: Yup.string().email('Invalid Email').required('Email is required'),
     password: Yup.string().min(6, 'Password must be at least 6 characters.').required('Password is required'),
@@ -115,4 +115,43 @@ export const contactSchema = Yup.object().shape( {
 
 
 
+// Form Clear action (generic and reusable for all forms above.) -------------------------------
 
+export const handleCloseModal = (
+    closeModalFunction,   // close the modal.
+    setFormValues,        // state setter functions for form values.
+    setFormErrors,
+    setIsFormSubmitted,
+    initialFormValues       // to reset the form values.
+) => {
+    closeModalFunction();
+    setFormValues(initialFormValues);
+    setFormErrors({});
+    setIsFormSubmitted;
+};
+
+
+
+// export const handleClearForm = (initialFormValues) => {
+//     // checking if any form fields have a value.
+//     const hasFormValues = Object.values(formValues).some(value => value !== '');
+
+//     if (hasFormValues) {
+//         // ask for confirmation action.
+//         const confirmClear = window.confirm("Are you sure you want to clear the form?");
+
+//         if  (confirmClear) {
+//             // reset the form values using initial form values.
+
+//             setFormValues(initialFormValues);
+//             setFormErrors({});
+//             setIsFormSubmitted(false);
+//         }
+//     } else {
+//         // form is already empty. no need for confirmation.
+
+//         setFormValues(initialFormValues);
+//         setFormErrors({});
+//         setIsFormSubmitted(false);
+//         }
+// };

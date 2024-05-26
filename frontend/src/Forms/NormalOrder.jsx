@@ -4,8 +4,12 @@ import Form from 'react-bootstrap/Form';
 import {Row, Col} from 'react-bootstrap';
 import Toast from 'react-bootstrap/Toast';
 
+// import { handleCloseModal } from '../Asset/Script/validationSchema';
+
 // import Hela athkam: form css file here.
 import '../Asset/Style/Helaathkam_Form.css';
+
+
 
 
 function NormalOrder ({ isNormalModalOpen, closeNormalModal }) {
@@ -13,6 +17,23 @@ function NormalOrder ({ isNormalModalOpen, closeNormalModal }) {
   // Noice tost state and function.
   const [showToast, setShowToast] =  useState(true);
   const toggleShowToast = () => setShowToast(!showToast);
+
+  // // Normal order initial form values are here.
+  // const initialFormValues = {
+  //   name: '',
+  //   email: '',
+  //   phoneNumber: '',
+  //   productCategory: '',
+  //   product: '',
+  //   quantity: '',
+  //   deliveryDate: '',
+  //   deliveryOption: '',
+  // };
+
+
+  // const [formValues, setFormValues] = useState(initialFormValues);
+  // const [formErrors, setFormErrors] = useState({});
+  // const [isFormSubmitted, setIsFormSubmitted] = useState(false);
 
   return (
     <>
@@ -101,7 +122,7 @@ function NormalOrder ({ isNormalModalOpen, closeNormalModal }) {
 
           {/* quantity */}
           <Col xs={4}>
-            <Form.Group ControlId="Quantity" className='mb-3'>
+            <Form.Group ControlId="quantity" className='mb-3'>
               <Form.Label className='customLabel'>Quantity <Form.Label className='required'>*</Form.Label></Form.Label>
               <Form.Control size='sm' type='text'></Form.Control>
             </Form.Group>
@@ -159,8 +180,8 @@ function NormalOrder ({ isNormalModalOpen, closeNormalModal }) {
         {/* normal order form close and submit buttons. */}
         <Row>
           <Col>
-          <Button id='basicClearButton' variant='secondary' className='mx-5' onClick={closeNormalModal}>Close</Button>
-          <Button id='basicSubmitButton'>Submit</Button>
+          <Button id='normalClearButton' variant='secondary' className='mx-5' onClick={closeNormalModal}>Close</Button>
+          <Button id='normalSubmitButton'>Submit</Button>
           </Col>
         </Row>
       </Modal.Body>

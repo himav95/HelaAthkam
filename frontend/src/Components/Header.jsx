@@ -46,7 +46,7 @@ function Header ({openLoginModal, openSignModal}) {
             <Container className='justify-content-center'>
                 <Nav  variant='pills'  activeKey={activeLink}>
                     
-                    <Nav.Link className='pageLink me-5' onClick={() => handleLinkActive('/')} href='/home' >Home</Nav.Link>
+                    <Nav.Link className='pageLink me-5' onClick={() => handleLinkActive('/home')} href='/' >Home</Nav.Link>
                     <Nav.Link className='pageLink mx-5' onClick={() => handleLinkActive('/about')} href='/about'>About</Nav.Link>
                     <Nav.Link className='pageLink mx-5' onClick={() => handleLinkActive('/products')} href='/products'>Products</Nav.Link>
                     <Nav.Link className='pageLink mx-5' onClick={() => handleLinkActive('/services')} href='/services'>Services</Nav.Link>
