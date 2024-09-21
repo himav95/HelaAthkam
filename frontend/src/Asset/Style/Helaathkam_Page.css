@@ -1,12 +1,13 @@
 /* Common styles throught web pages. */
-.componentSpace { margin-bottom: 8rem;}
-.rowMargin { margin-bottom: 5rem;}
-.active-Link { color: red; }
-
-
-
-
-
+.componentSpace {
+  margin-bottom: 8rem;
+}
+.rowMargin {
+  margin-bottom: 5rem;
+}
+.active-Link {
+  color: red;
+}
 
 /* -----Home page css----- */
 /* .backgroundImageContainer {
@@ -15,169 +16,233 @@
     background-position: center;
     min-height: 100vh;
 } */
-#carouselBlock {width: 45rem; height: 29rem;} 
-#carouselMini1 {width: 18rem; height: 11rem;}
-#carouselMini2 {width: 18rem; height: 11rem;}
-#carouselMini3 {width: 18rem; height: 11rem;}
-#carouselMini4 {width: 18rem; height: 11rem;}
+#carouselBlock {
+  width: 45rem;
+  height: 29rem;
+}
+#carouselMini1 {
+  width: 18rem;
+  height: 11rem;
+}
+#carouselMini2 {
+  width: 18rem;
+  height: 11rem;
+}
+#carouselMini3 {
+  width: 18rem;
+  height: 11rem;
+}
+#carouselMini4 {
+  width: 18rem;
+  height: 11rem;
+}
 
-
-
-.carousellg {width:45rem; height: 29rem;}
-.imageFirst {width: 18rem; height: 11rem;}
-.carouselSecond {width: 18rem; height: 11rem;}
-.carouselThird {width: 18rem; height: 11rem;}
-.carouselFourth {width: 18rem; height: 11rem;}
-
-
-
-
+.carousellg {
+  width: 45rem;
+  height: 29rem;
+}
+.imageFirst {
+  width: 18rem;
+  height: 11rem;
+}
+.carouselSecond {
+  width: 18rem;
+  height: 11rem;
+}
+.carouselThird {
+  width: 18rem;
+  height: 11rem;
+}
+.carouselFourth {
+  width: 18rem;
+  height: 11rem;
+}
 
 /* -----Service Page css----- */
 .serviceImgz {
-    height: 10rem;
-    width: 10rem;
+  height: 10rem;
+  width: 10rem;
 }
 
 .serviceCardz {
-    border-style: none !important ;
-    margin-bottom: 5rem;
+  border-style: none !important ;
+  margin-bottom: 5rem;
 }
 
 .serviceHeadings {
-    color: #2E4053 ;
-    font-weight: bold;
+  color: #2e4053;
+  font-weight: bold;
 }
-
-
-
-
-
-
-
 
 /* ------Products page css----- */
 #productsContain {
-    background-color: #EBEDEF;
-    border-style: none;
+  background-color: #ebedef;
+  border-style: none;
 }
-
-
-
-
-
-
-
 
 /* -----Order-Online Page css----- */
 #orderContainer {
-    height: 30rem;
+  height: 30rem;
 }
 #normalOrderButton {
-    width: 15rem; 
-    height: 3rem; 
-    background-color: #176B87; 
+  width: 15rem;
+  height: 3rem;
+  background-color: #176b87;
 }
 
-#editionButton { 
-    width: 15rem; 
-    height: 3rem; 
-    background-color:#176B87; 
+#editionButton {
+  width: 15rem;
+  height: 3rem;
+  background-color: #176b87;
 }
 
 #customOrderButton {
-    width: 15rem; 
-    height: 3rem; 
-    background-color:#176B87;  
+  width: 15rem;
+  height: 3rem;
+  background-color: #176b87;
 }
 #editionCardFooter {
-    border-style: none;
-    background-color: white;
+  border-style: none;
+  background-color: white;
 }
 #customCardFooter {
-    border-style: none;
-    background-color: white;
+  border-style: none;
+  background-color: white;
 }
-
-
-
-
-
 
 /* -----Contact us page css----- */
 #contactInfoSRowspace {
-    margin-bottom: 3rem;
+  margin-bottom: 3rem;
 }
-
 
 /* -----Join Us page css----- */
 #joinUsCard {
-    border-style: none;
+  border-style: none;
 }
 
 #joinUsButton {
-    height: 3rem;
-    width: 30rem;
-    background-color: #176B87;
-    border-color: #176B87;
-    color: white;
-    border-radius: 0%;
-    float: center;
-    margin-bottom: 3rem;
+  height: 3rem;
+  width: 30rem;
+  background-color: #176b87;
+  border-color: #176b87;
+  color: white;
+  border-radius: 0%;
+  float: center;
+  margin-bottom: 3rem;
 }
 
 #joinUsImg1 {
-    height: 15rem;
-    width: 18rem;
-    border-style: none;
+  height: 15rem;
+  width: 18rem;
+  border-style: none;
 }
 
 #joinUsImg2 {
-    height: 15rem;
-    width: 18rem;
-    border-style: none;
+  height: 15rem;
+  width: 18rem;
+  border-style: none;
 }
 
 #joinUsImg3 {
-    height: 15rem;
-    width: 18rem;
-    border-style: none;
+  height: 15rem;
+  width: 18rem;
+  border-style: none;
 }
 
 #joinUsImg4 {
-    height: 15rem;
-    width: 18rem;
-    border-style: none;
+  height: 15rem;
+  width: 18rem;
+  border-style: none;
 }
 
 #joinUsImageSet {
-    margin-bottom: 10rem;
-    border-style: none;
+  margin-bottom: 10rem;
+  border-style: none;
 }
-
-
-
-
-
-
-
 
 /* -----About page css----- */
 #aboutContentCard {
-    border-style: none;
+  border-style: none;
 }
-
-
-
-
 
 /* -----Admin Dashboard css is here.----- */
 #adminHeader {
-    color: #176B87;
-    height: 4rem;
+  color:;
+  height: 4rem;
+}
+
+.listgroupButton {
+  width: 100%;
+  border: none;
+  background-color: #0C90C3 !important;
+  border-color: #0C90C3 !important;
+  justify-content: flex-start;
+  text-align: left !important;
+  padding: 0;
+  display: flex;
+  font-size: 12px !important;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.listgroupButton:hover {
+  background-color: #0A749D !important;
+}
+
+.caretRight1 {
+  margin-left: 4px;
+  margin-right: 5px;
+  font-size: small;
+  
 }
 
 
 
+#filterCards1 {
+  /* width: 10rem; */
+  height:8rem !important;
+  color: black;
+  background-color: #52be80;
+  text-align: center;
+}
 
+#filterCards2 {
+  /* width: 10rem; */
+  height:8rem !important;
+  color: black;
+  background-color: #45b39d;
+  text-align: center;
+}
+
+#filterCards3 {
+  /* width: 10rem; */
+  height:8rem !important;
+  color: black;
+  background-color: #85c1e9;
+  text-align: center;
+}
+
+#filterCards4 {
+  /* width: 10rem; */
+  height:8rem !important;
+  color: black;
+  background-color: #f4d03f;
+  text-align: center;
+}
+
+#filterCards1:hover {
+  background-color: #27ae60;
+}
+
+#filterCards2:hover {
+  background-color: #16a085 ;
+}
+
+#filterCards3:hover {
+  background-color:  #3498db;
+}
+
+#filterCards4:hover {
+  background-color: #f1c40f;
+}
 

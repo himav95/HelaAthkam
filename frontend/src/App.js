@@ -1,25 +1,35 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Header from "./Components/Header";
-import Footer from "./Components/Footer";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { useState } from 'react';
 
-import Home from "./Pages/Home";
-import About from "./Pages/About";
-import Services from "./Pages/Services";
-import Products from "./Pages/Products";
-import OrderOnline from "./Pages/OrderOnline";
-import JoinUs from "./Pages/JoinUs";
-import Contact from "./Pages/Contact";
-import{ Container} from "react-bootstrap";
+// Importing necessary components and pages
+import Header from './Components/Header';
+import Footer from './Components/Footer';
 
-import { useState } from "react";
-import Login from "./Forms/Login";
-import SignUp from "./Forms/SignUp";
+// User components
+import Home from './Pages/Home';
+import About from './Pages/About';
+import Services from './Pages/Services';
+import Products from './Pages/Product';
+import OrderOnline from './Pages/OrderOnline';
+import JoinUs from './Pages/JoinUs';
+import Contact from './Pages/Contact';
+import { Container, Row, Col } from 'react-bootstrap';
 
+// login components
+import Login from './Forms/Login';
+import SignUp from './Forms/SignUp';
 
-
+// Admin compone
+import Dashboard from './Pages/Admin/Dashboard';
+import Order from './Pages/Admin/Order';
+import TopNav from './Pages/Admin/Components/TopNav';
+import SideNav from './Pages/Admin/Components/SideNav';
+import CraftMaker from './Pages/Admin/CraftMaker';
+import CraftMakerRequest from './Pages/Admin/CraftMakerRequest';
+import Product from './Pages/Admin/Product';
+import Customer from './Pages/Admin/Customer';
 
 function App() {
-
   // login and sign up forms modal state and function details.
   const [isLoginModalOpen, setLoginModalOpen] = useState(false);
   const [isSignModalOpen, setSignModalOpen] = useState(false);
@@ -30,37 +40,161 @@ function App() {
   const openSignModal = () => setSignModalOpen(true);
   const closeSignModal = () => setSignModalOpen(false);
 
+  const Layout = ({ children }) => {
+    return (
+      <>
+        <Header openLoginModal={openLoginModal} openSignModal={openSignModal} />
+        <Container className="container-fluid" style={{ marginTop: 20 }}>
+          {children}
+        </Container>
+        <Footer />
+      </>
+    );
+  };
+
+  const AdminLayout = ({ children }) => {
+    return (
+      <>
+        <TopNav />
+        <Row style={{ margin: 0, height: 'calc(100vh - 50px)' }}>
+          <Col xs={2}>
+            <SideNav />
+          </Col>
+          <Col xs={10}>{children}</Col>
+        </Row>
+      </>
+    );
+  };
+
   return (
     <>
-   {/* BrowserRouter/ Router; problem occured. instead of wrapping only the Routes container whole app had to be wrapped in. */}
-    <BrowserRouter> 
+      {/* BrowserRouter/ Router; problem occured. instead of wrapping only the Routes container whole app had to be wrapped in. */}
+      <BrowserRouter>
+        {/* sign and login modal */}
 
-    {/* sign and login modal */}
-    <Header openLoginModal={openLoginModal} openSignModal={openSignModal}/>
+        {/* pass modal state and close function to the login component. */}
+        <Login
+          isModalOpen={isLoginModalOpen}
+          closeLoginModal={closeLoginModal}
+        />
 
-    {/* pass modal state and close function to the login component. */}
-    <Login isModalOpen={isLoginModalOpen} closeLoginModal={closeLoginModal} />
+        {/* pass modal state and close function to the sign up component. */}
+        <SignUp isModalOpen={isSignModalOpen} closeSignModal={closeSignModal} />
 
-    {/* pass modal state and close function to the sign up component. */}
-    <SignUp isModalOpen={isSignModalOpen} closeSignModal={closeSignModal} />
+        {/* Header.jsx pages nav routing */}
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <Layout>
+                <Home />
+              </Layout>
+            }
+          />
+          <Route
+            path="/about"
+            element={
+              <Layout>
+                <About />
+              </Layout>
+            }
+          />
+          <Route
+            path="/products"
+            element={
+              <Layout>
+                <Products />
+              </Layout>
+            }
+          />
+          <Route
+            path="/services"
+            element={
+              <Layout>
+                <Services />
+              </Layout>
+            }
+          />
+          <Route
+            path="/orderonline"
+            element={
+              <Layout>
+                <OrderOnline />
+              </Layout>
+            }
+          />
+          <Route
+            path="/contact"
+            element={
+              <Layout>
+                <Contact />
+              </Layout>
+            }
+          />
+          <Route
+            path="/joinus"
+            element={
+              <Layout>
+                <JoinUs />
+              </Layout>
+            }
+          />
 
-    
-    {/* Header.jsx pages nav routing */}
-    <Container className="container-fluid" style={{marginTop:20}}>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/products" element={<Products />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/orderonline" element={<OrderOnline />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/joinus" element={<JoinUs />} /> 
-      </Routes>
-    </Container>
+          <Route
+            path="/admin/dashboard"
+            element={
+              <AdminLayout>
+                <Dashboard />
+              </AdminLayout>
+            }
+          />
 
-    <Footer />
-    </BrowserRouter>
-   
+          <Route
+            path="/admin/craftmaker"
+            element={
+              <AdminLayout>
+                <CraftMaker />
+              </AdminLayout>
+            }
+          />
+
+          <Route
+            path="/admin/craftmakerrequest"
+            element={
+              <AdminLayout>
+                <CraftMakerRequest />
+              </AdminLayout>
+            }
+          />
+
+          <Route
+            path="/admin/product"
+            element={
+              <AdminLayout>
+                <Product />
+              </AdminLayout>
+            }
+          />
+
+          <Route
+            path="/admin/customer"
+            element={
+              <AdminLayout>
+                <Customer />
+              </AdminLayout>
+            }
+          />
+
+          <Route
+            path="/admin/order"
+            element={
+              <AdminLayout>
+                <Order />
+              </AdminLayout>
+            }
+          />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

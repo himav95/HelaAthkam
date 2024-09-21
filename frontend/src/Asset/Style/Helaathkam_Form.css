@@ -1,222 +1,185 @@
 /* Hela athkam common form content style. */
-.required { color: red;}
-.customLabel {font-weight: 480;}
-.customControl { margin-top: 0.1cm;}
-
-
-
+.required {
+  color: red;
+}
+.customLabel {
+  font-weight: 480;
+}
+.customControl {
+  margin-top: 0.1cm;
+}
 
 /* -----Login form css----- */
-#loginModalHeader { 
-    border-style: none; 
-    border-radius: 0%; 
+#loginModalHeader {
+  border-style: none;
+  border-radius: 0%;
 }
 
-#loginModalBody { 
-    height: 12cm; 
-    border-radius: 0%; 
-    border-style: none; 
+#loginModalBody {
+  height: 12cm;
+  border-radius: 0%;
+  border-style: none;
 }
 
-#loginButton { 
-    height: 2cm; 
-    width: 12cm; 
-    color: white; 
-    background-color: #176B87; 
+#loginButton {
+  height: 2cm;
+  width: 12cm;
+  color: white;
+  background-color: #176b87;
 }
 
-#loginModalFooter { border-style: none; 
+#loginModalFooter {
+  border-style: none;
 }
 
-
-
-
-
-
+.contentAlign {
+  align-content: center;
+}
 
 /* -----Sign-Up form css----- */
-#signUpModal { 
-    border-radius: 0%; 
-    border-style: none ; 
-    width: 70rem;
-    height: 80rem;
+#signUpModal {
+  border-radius: 0%;
+  border-style: none;
+  width: 70rem;
+  height: 80rem;
 }
 
-#signUpModalHeader { 
-    border-radius: 0%; 
-    border-style: none;
+#signUpModalHeader {
+  border-radius: 0%;
+  border-style: none;
 }
 
-#signUpModalBody { 
-    border-radius: 0%; 
-    border-style: none; 
+#signUpModalBody {
+  border-radius: 0%;
+  border-style: none;
 }
 
-#signUpButton { 
-    height: 2cm; 
-    width: 12cm; 
-    color: white; 
-    background-color: #176B87; 
+#signUpButton {
+  height: 2cm;
+  width: 12cm;
+  color: white;
+  background-color: #176b87;
 }
-
-
-
-
-
-
-
 
 /* -----Normal Order form css----- */
 #normalOrderHeader {
-    background-color: #025464;
-    color: white;
+  background-color: #025464;
+  color: white;
 }
 
 #deliveryOptionCard {
-    width: 8cm;
-    height: 5cm;
-    border-style: dashed;
+  width: 8cm;
+  height: 5cm;
+  border-style: dashed;
 }
 
 #noticeToast {
-    width: 10cm;
-    background-color: #E8AA42;
+  width: 10cm;
+  background-color: #e8aa42;
 }
 
 #normalClearButton {
-    width: 5cm;
-    height: 1cm;
-    background-color: #AEB6BF;
-    color: black;
-    float: right;
+  width: 5cm;
+  height: 1cm;
+  background-color: #aeb6bf;
+  color: black;
+  float: right;
 }
 
 #normalSubmitButton {
-    width: 5cm;
-    height: 1cm;
-    background-color: #176B87;
-    float: right;
+  width: 5cm;
+  height: 1cm;
+  background-color: #176b87;
+  float: right;
 }
-
-
-
-
-
-
-
 
 /* -----CustomOrder form css----- */
 #customOrderHeader {
-    background-color: #025464;
-    color: white;
+  background-color: #025464;
+  color: white;
 }
 
 #customClearButton {
-    width: 5cm;
-    height: 1cm;
-    background-color: #AEB6BF;
-    color: black;
-    float: right;
+  width: 5cm;
+  height: 1cm;
+  background-color: #aeb6bf;
+  color: black;
+  float: right;
 }
 
 #customSubmitButton {
-    width: 5cm;
-    height: 1cm;
-    background-color: #176B87;
-    float: right;
+  width: 5cm;
+  height: 1cm;
+  background-color: #176b87;
+  float: right;
 }
-
-
-
-
-
-
-
-
-
 
 /* -----SpecialEdition form css----- */
 #specialEditionHeader {
-    background-color: #025464;
-    color: white;
+  background-color: #025464;
+  color: white;
 }
 
 #editionClearButton {
-    width: 5cm;
-    height: 1cm;
-    background-color: #AEB6BF;
-    color: black;
-    float: right;
+  width: 5cm;
+  height: 1cm;
+  background-color: #aeb6bf;
+  color: black;
+  float: right;
 }
 
 #editionSubmitButton {
-    width: 5cm;
-    height: 1cm;
-    background-color: #176B87;
-    float: right;
+  width: 5cm;
+  height: 1cm;
+  background-color: #176b87;
+  float: right;
 }
-
-
-
-
-
-
-
-
-
 
 /* -----Craftsman request form css----- */
 #craftsmanHeader {
-    background-color: #025464;
-    color: white;
+  background-color: #025464;
+  color: white;
 }
 
 #craftClearButton {
-    width: 5cm;
-    height: 1cm;
-    background-color: #AEB6BF;
-    color: black;
-    float: right;
+  width: 5cm;
+  height: 1cm;
+  background-color: #aeb6bf;
+  color: black;
+  float: right;
 }
 
 #craftSubmitButton {
-    width: 5cm;
-    height: 1cm;
-    background-color: #176B87;
-    float: right;
+  width: 5cm;
+  height: 1cm;
+  background-color: #176b87;
+  float: right;
 }
-
-
-
-
-
 
 /* -----Contact Us page: Contact Form css----- */
 #clearfm {
-    width: 7rem;
-    height: 2.5rem;
-    background-color: #AEB6BF;
-    border-style: none;
-    color: black;
-    float: right;
+  width: 7rem;
+  height: 2.5rem;
+  background-color: #aeb6bf;
+  border-style: none;
+  color: black;
+  float: right;
 }
 
 #submitfm {
-    width: 7rem;
-    height: 2.5rem;
-    background-color: #176B87;
-    border-color: #176B87;
-    color: #efefef;
-    float: right;
+  width: 7rem;
+  height: 2.5rem;
+  background-color: #176b87;
+  border-color: #176b87;
+  color: #efefef;
+  float: right;
 }
 
 #contactformHeading {
-    background-color: #176B87;
-    color: #efefef;
+  background-color: #176b87;
+  color: #efefef;
 }
 
 #contactForm {
-    border-style: outset;
-
+  border-style: outset;
 }
-

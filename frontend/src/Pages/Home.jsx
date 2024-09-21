@@ -1,30 +1,23 @@
 import Carousel from 'react-bootstrap/Carousel';
-import { Row, Col , Button, Container} from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 import Image14 from '../Asset/Images/Image14.jpg';
 import Image8 from '../Asset/Images/Image8.jpg';
 import Image17 from '../Asset/Images/Image17.jpg';
 import Image18 from '../Asset/Images/Image18.jpg';
 import Image15 from '../Asset/Images/Image15.jpg';
 import Image22 from '../Asset/Images/Image22.jpg';
-import backgroundImage2 from '../Asset/Images/backgroundImage2.jpg';
-
-
-
-
-
+// import backgroundImage2 from '../Asset/Images/backgroundImage2.jpg';
 
 // import Hela athkam: Page css file here.
 import '../Asset/Style/Helaathkam_Page.css';
 // import Hela athkam: Form css file here.
 import '../Asset/Style/Helaathkam_Form.css';
 
-
-function Home () {
-    return (
-        <div className="backgroundImageContainer">
-        
-        {/* Home page background image content is here. */}
-        {/* <div>
+function Home() {
+  return (
+    <div className="backgroundImageContainer">
+      {/* Home page background image content is here. */}
+      {/* <div>
             style={{
                 backgroundImage : 'url(${backgroundImage2})',
                 backgroundSize : 'cover',
@@ -35,83 +28,83 @@ function Home () {
                 minHeight : '100vh' // ensure the full height in the view point.
             }}
         </div> */}
-        
-        {/* Mini image block content is here. */}
-        <Row className='rowMargin'>  
-            <Col></Col>
-            <Col >
-                <div >
-                    <img className="imageFirst" src={`${Image8}`} alt='Image8' />
-                </div>  
-            </Col>
 
-            <Col >
-                <div >
-                    <img className="imageFirst" src={`${Image17}`} alt='Image17' />
-                </div>  
-            </Col>
+      {/* Mini image block content is here. */}
+      <Row className="rowMargin">
+        <Col></Col>
+        <Col>
+          <div>
+            <img className="imageFirst" src={`${Image8}`} alt="Image8" />
+          </div>
+        </Col>
 
-            <Col >
-                <div >
-                    <img className="imageFirst" src={`${Image18}`} alt='Image18' />
-                </div>  
-            </Col>
+        <Col>
+          <div>
+            <img className="imageFirst" src={`${Image17}`} alt="Image17" />
+          </div>
+        </Col>
 
-            <Col >
-                <div >
-                    <img className="imageFirst" src={`${Image14}`} alt='Image14' />
-                </div>  
-            </Col>
-            <Col></Col>
-          
-        </Row>
-        
-        {/* Home page welcome paragraph content is here. */}
-        <Row className='rowMargin'>
-            <Col></Col>
-            <Col className='col-lg-6'>
-                <h5>Welcome to Hela Athkam, where craftsmanship meets curated elegance! Immerse yourself in a world of handcrafted
-                wonders that blend tradition with contemporary allure. 
-                Our pieces are more than just products—they are a celebration of heritage and a testament to the skilled artisans
-                 behind each creation.</h5>
-            </Col>
-            <Col></Col>
-        </Row>
+        <Col>
+          <div>
+            <img className="imageFirst" src={`${Image18}`} alt="Image18" />
+          </div>
+        </Col>
 
-        {/* Carousel block and its side paragraph content is here. */}
-        <Row className='rowMargin'>
-            <Col></Col>
+        <Col>
+          <div>
+            <img className="imageFirst" src={`${Image14}`} alt="Image14" />
+          </div>
+        </Col>
+        <Col></Col>
+      </Row>
 
-            {/* Carousel block content. */}
-            <Col className=''>
-                <Carousel id='carouselBlock' fade>
-                    <Carousel.Item interval={4500}>
-                        <img className='carousellg' src={`${Image22}`} alt='Image22'/>
-                        <Carousel.Caption></Carousel.Caption>
-                    </Carousel.Item>
+      {/* Home page welcome paragraph content is here. */}
+      <Row className="rowMargin">
+        <Col></Col>
+        <Col className="col-lg-6">
+          <h5>
+            Welcome to Hela Athkam, where craftsmanship meets curated elegance!
+            Immerse yourself in a world of handcrafted wonders that blend
+            tradition with contemporary allure. Our pieces are more than just
+            products—they are a celebration of heritage and a testament to the
+            skilled artisans behind each creation.
+          </h5>
+        </Col>
+        <Col></Col>
+      </Row>
 
-                    <Carousel.Item interval={4500}>
-                        <img className='carousellg' src={`${Image15}`} alt='Image15' />
-                        <Carousel.Caption></Carousel.Caption>
-                    </Carousel.Item>
-                </Carousel>
-            </Col>
+      {/* Carousel block and its side paragraph content is here. */}
+      <Row className="rowMargin">
+        <Col></Col>
 
-            {/* carousel block side paragraph content. */}
-            <Col className=''>
-            <h5>Diverse range of handicrafted essentials, Elegant decoratives to adorn your home or work place, Practical essentials
-                enhance functionality, or thoughtful gifts to loved ones. Explore and discover what matches your taste..
-            </h5>
-            </Col>
-            <Col></Col>
-        </Row>
+        {/* Carousel block content. */}
+        <Col className="">
+          <Carousel id="carouselBlock" fade>
+            <Carousel.Item interval={4500}>
+              <img className="carousellg" src={`${Image22}`} alt="Image22" />
+              <Carousel.Caption></Carousel.Caption>
+            </Carousel.Item>
 
-        
-       
-        
-        
-        </div>
-    )
+            <Carousel.Item interval={4500}>
+              <img className="carousellg" src={`${Image15}`} alt="Image15" />
+              <Carousel.Caption></Carousel.Caption>
+            </Carousel.Item>
+          </Carousel>
+        </Col>
+
+        {/* carousel block side paragraph content. */}
+        <Col className="">
+          <h5>
+            Diverse range of handicrafted essentials, Elegant decoratives to
+            adorn your home or work place, Practical essentials enhance
+            functionality, or thoughtful gifts to loved ones. Explore and
+            discover what matches your taste..
+          </h5>
+        </Col>
+        <Col></Col>
+      </Row>
+    </div>
+  );
 }
 
-export default Home
+export default Home;
