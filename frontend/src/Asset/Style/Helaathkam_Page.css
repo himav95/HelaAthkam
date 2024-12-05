@@ -9,13 +9,22 @@
   color: red;
 }
 
+
+
 /* -----Home page css----- */
-/* .backgroundImageContainer {
-    background-image: url('../Asset/Images/backgroundImage1.jpg');
-    background-size: cover;
-    background-position: center;
-    min-height: 100vh;
-} */
+
+.backgroundImageContainer {
+  background-image: url('../Images/background3.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0;
+  min-height: 100vh;
+  margin: 0;
+  width: 100%;
+  
+}
+
 #carouselBlock {
   width: 45rem;
   height: 29rem;
@@ -41,9 +50,11 @@
   width: 45rem;
   height: 29rem;
 }
+
 .imageFirst {
   width: 18rem;
   height: 11rem;
+  border-style: inherit;
 }
 .carouselSecond {
   width: 18rem;
@@ -78,6 +89,26 @@
 #productsContain {
   background-color: #ebedef;
   border-style: none;
+}
+
+#cartButton {
+  width: 3cm;
+  background-color: #f7dc6f;
+  color: black;
+  border-color: gray;
+}
+
+#buyButton {
+  width: 3cm;
+  background-color: #64CCC5;
+  border-color: #0A749D;
+  color: black;
+}
+
+#customPagination .page-item.active .page-link {
+  background-color: #176b87;
+  border-color: #176b87;
+  
 }
 
 /* -----Order-Online Page css----- */
@@ -171,22 +202,30 @@
   height: 4rem;
 }
 
+ /* Admin : Side nav css */
 .listgroupButton {
   width: 100%;
   border: none;
-  background-color: #0C90C3 !important;
-  border-color: #0C90C3 !important;
+  background-color: #64CCC5 !important;
+  border-color: gray !important;
   justify-content: flex-start;
   text-align: left !important;
   padding: 0;
   display: flex;
   font-size: 12px !important;
-  color: white;
+  color: black !important;
   transition: background-color 0.3s ease;
 }
 
 .listgroupButton:hover {
-  background-color: #0A749D !important;
+  background-color: #176b87 !important;
+  color: white !important;
+}
+
+.listgroupButton:active, 
+.listgroupButton.active {
+  background-color: #176b87 !important;
+  color: white !important;
 }
 
 .caretRight1 {
@@ -204,6 +243,7 @@
   color: black;
   background-color: #52be80;
   text-align: center;
+  padding: 10px;
 }
 
 #filterCards2 {
@@ -212,6 +252,7 @@
   color: black;
   background-color: #45b39d;
   text-align: center;
+  padding: 10px;
 }
 
 #filterCards3 {
@@ -220,6 +261,7 @@
   color: black;
   background-color: #85c1e9;
   text-align: center;
+  padding: 10px;
 }
 
 #filterCards4 {
@@ -228,6 +270,7 @@
   color: black;
   background-color: #f4d03f;
   text-align: center;
+  padding: 10px;
 }
 
 #filterCards1:hover {
@@ -245,4 +288,6 @@
 #filterCards4:hover {
   background-color: #f1c40f;
 }
+
+/* Table css */
 

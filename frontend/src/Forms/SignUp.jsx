@@ -17,6 +17,7 @@ function SignUp({ isModalOpen, closeSignModal }) {
         backdrop="static"
         size="lg"
         id="signUpModal"
+        centered
       >
         <Modal.Header id="signUpModalHeader" closeButton>
           <Modal.Title>
@@ -33,9 +34,9 @@ function SignUp({ isModalOpen, closeSignModal }) {
             <Col></Col>
             {/* full name. */}
             <Col xs={5}>
-              <InputGroup className="mb-3">
+              <InputGroup className="mb-3" size='sm'>
                 <InputGroup.Text id="fullName">
-                  <Person size={25} color="black" />
+                  <Person size={22} color="#176b87" />
                 </InputGroup.Text>
                 <Form.Control
                   placeholder="Enter your Full Name"
@@ -49,9 +50,9 @@ function SignUp({ isModalOpen, closeSignModal }) {
 
             {/* email. */}
             <Col xs={5}>
-              <InputGroup className="mb-3">
+              <InputGroup className="mb-3" size='sm'>
                 <InputGroup.Text id="email">
-                  <EnvelopeAt size={20} color="black" />
+                  <EnvelopeAt size={20} color="#176b87" />
                 </InputGroup.Text>
                 <Form.Control
                   placeholder="Enter Your E-mail Address"
@@ -69,9 +70,9 @@ function SignUp({ isModalOpen, closeSignModal }) {
             <Col></Col>
             {/* password */}
             <Col xs={5}>
-              <InputGroup className="mb-3">
+              <InputGroup className="mb-3" size='sm'>
                 <InputGroup.Text id="password1">
-                  <Key size={20} color="black" />
+                  <Key size={20} color="#176b87" />
                 </InputGroup.Text>
                 <Form.Control
                   placeholder="Enter Password"
@@ -84,9 +85,9 @@ function SignUp({ isModalOpen, closeSignModal }) {
 
             {/* re-password */}
             <Col xs={5}>
-              <InputGroup className="mb-3">
+              <InputGroup className="mb-3" size='sm'>
                 <InputGroup.Text id="password2">
-                  <Key size={20} color="black" />
+                  <Key size={20} color="#176b87" />
                 </InputGroup.Text>
                 <Form.Control
                   placeholder="Re-Enter Password"

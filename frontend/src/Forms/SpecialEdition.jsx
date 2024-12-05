@@ -13,6 +13,8 @@ function SpecialEdit({ isEditionModalOpen, closeEditionModal }) {
         onHide={closeEditionModal}
         backdrop="static"
         size="lg"
+        scrollable
+        centered
       >
         {/* className='modal modal-dialog-scrollable' : not sure what suit the most */}
         <Modal.Header id="specialEditionHeader" closeButton>
@@ -24,7 +26,7 @@ function SpecialEdit({ isEditionModalOpen, closeEditionModal }) {
         {/* Special edition request content within modal body. */}
         <Modal.Body>
           <Row className="mb-3">
-            <h5 className="text-muted">Customer Details</h5>
+            <h6 className="text-muted">Customer Details</h6>
           </Row>
 
           {/* special edition request form: Customer details */}
@@ -81,7 +83,7 @@ function SpecialEdit({ isEditionModalOpen, closeEditionModal }) {
 
           {/* Special edition form: Request details */}
           <Row className="mb-3">
-            <h5 className="text-muted">Request Details</h5>
+            <h6 className="text-muted">Request Details</h6>
           </Row>
 
           {/* Select the product; up for the change */}
@@ -145,7 +147,7 @@ function SpecialEdit({ isEditionModalOpen, closeEditionModal }) {
           </Row>
 
           {/* Request quantity and delivery date */}
-          <Row className="mb-5">
+          <Row className="mb-4">
             <Col></Col>
             {/* quantity */}
             <Col xs={4}>

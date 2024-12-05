@@ -9,7 +9,7 @@ import { EnvelopeAt, Key } from 'react-bootstrap-icons';
 // import Hela athkam: form css file.
 import '../Asset/Style/Helaathkam_Form.css';
 
-function Login({ isModalOpen, closeLoginModal, openSignModal }) {
+function Login({ isModalOpen, closeLoginModal}) {
   return (
     <>
       {/* login modal */}
@@ -35,9 +35,9 @@ function Login({ isModalOpen, closeLoginModal, openSignModal }) {
           <Row className="mb-4">
             <Col></Col>
             <Col xs={6}>
-              <InputGroup className="mb-3">
+              <InputGroup className="mb-3" size='sm'>
                 <InputGroup.Text id="email">
-                  <EnvelopeAt size={20} color="black" />
+                  <EnvelopeAt size={20} color="#176b87" />
                 </InputGroup.Text>
                 <Form.Control
                   placeholder="Enter Your E-mail Address"
@@ -55,9 +55,9 @@ function Login({ isModalOpen, closeLoginModal, openSignModal }) {
           <Row className="mb-5">
             <Col></Col>
             <Col xs={6}>
-              <InputGroup className="mb-3">
+              <InputGroup className="mb-3" size='sm'>
                 <InputGroup.Text id="password1">
-                  <Key size={20} color="black" />
+                  <Key size={20} color="#176b87" />
                 </InputGroup.Text>
                 <Form.Control
                   placeholder="Enter Your Password"
@@ -80,22 +80,23 @@ function Login({ isModalOpen, closeLoginModal, openSignModal }) {
               Login
             </Button>
           </Row>
-        </Modal.Body>
 
-        <Modal.Footer id="loginModalFooter">
-          {/* link to sign up form. */}
           <Row>
-            <Col className="">
-              <Form.Label className="text-muted">
+            <Col className="d-flex justify-content-end align-items-center" >
+              <Form.Label className="text-muted mb-0 me-1">
                 First visit to Hela Athlam?
-                <Nav>
-                  <Nav.Link onClick={openSignModal}>Sign Up</Nav.Link>
-                </Nav>
-                here.
               </Form.Label>
+
+              <Nav.Link 
+              as='span' 
+              onClick={() => {closeLoginModal() }} 
+              style={{cursor: 'pointer', color: 'blue'}}>Sign Up</Nav.Link>
+
+              <Form.Label className='text-muted mb-0 ms-1'>here.</Form.Label>
             </Col>
           </Row>
-        </Modal.Footer>
+        </Modal.Body>
+
       </Modal>
     </>
   );

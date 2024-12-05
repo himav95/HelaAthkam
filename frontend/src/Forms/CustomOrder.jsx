@@ -13,6 +13,8 @@ function CustomOrder({ isCustomModalOpen, closeCustomModal }) {
         onHide={closeCustomModal}
         backdrop="static"
         size="lg"
+        scrollable
+        centered
       >
         {/* className='modal modal-dialog-scrollable' : not sure what suit the most */}
         <Modal.Header id="customOrderHeader" closeButton>
@@ -24,7 +26,7 @@ function CustomOrder({ isCustomModalOpen, closeCustomModal }) {
         {/* Custom order content within modal body. */}
         <Modal.Body>
           <Row className="mb-3">
-            <h5 className="text-muted">Customer Details</h5>
+            <h6 className="text-muted">Customer Details</h6>
           </Row>
 
           {/* Custom order form: Customer details */}
@@ -81,7 +83,7 @@ function CustomOrder({ isCustomModalOpen, closeCustomModal }) {
 
           {/* Custom order form: Order request details */}
           <Row className="mb-3">
-            <h5 className="text-muted">Order Details</h5>
+            <h6 className="text-muted">Order Details</h6>
           </Row>
           <Row className="mb-3">
             <Col></Col>
@@ -117,7 +119,7 @@ function CustomOrder({ isCustomModalOpen, closeCustomModal }) {
           </Row>
 
           {/* order quantity and delivery date */}
-          <Row className="mb-5">
+          <Row className="mb-4">
             <Col></Col>
             {/* quantity */}
             <Col xs={4}>

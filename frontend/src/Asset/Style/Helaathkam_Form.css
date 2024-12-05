@@ -2,14 +2,19 @@
 .required {
   color: red;
 }
+
 .customLabel {
   font-weight: 480;
 }
+
 .customControl {
   margin-top: 0.1cm;
 }
 
+
+
 /* -----Login form css----- */
+
 #loginModalHeader {
   border-style: none;
   border-radius: 0%;
@@ -23,13 +28,9 @@
 
 #loginButton {
   height: 2cm;
-  width: 12cm;
+  width: 10cm;
   color: white;
   background-color: #176b87;
-}
-
-#loginModalFooter {
-  border-style: none;
 }
 
 .contentAlign {
@@ -38,10 +39,10 @@
 
 /* -----Sign-Up form css----- */
 #signUpModal {
-  border-radius: 0%;
+  border-radius: 0%; 
   border-style: none;
-  width: 70rem;
-  height: 80rem;
+  /* width: 70rem; */
+  /* height: 80rem; */
 }
 
 #signUpModalHeader {
@@ -56,7 +57,7 @@
 
 #signUpButton {
   height: 2cm;
-  width: 12cm;
+  width: 10cm;
   color: white;
   background-color: #176b87;
 }
@@ -75,11 +76,11 @@
 
 #noticeToast {
   width: 10cm;
-  background-color: #e8aa42;
+  background-color: #64CCC5;
 }
 
 #normalClearButton {
-  width: 5cm;
+  width: 4cm;
   height: 1cm;
   background-color: #aeb6bf;
   color: black;
@@ -87,7 +88,7 @@
 }
 
 #normalSubmitButton {
-  width: 5cm;
+  width: 4cm;
   height: 1cm;
   background-color: #176b87;
   float: right;
@@ -100,7 +101,7 @@
 }
 
 #customClearButton {
-  width: 5cm;
+  width: 4cm;
   height: 1cm;
   background-color: #aeb6bf;
   color: black;
@@ -108,7 +109,7 @@
 }
 
 #customSubmitButton {
-  width: 5cm;
+  width: 4cm;
   height: 1cm;
   background-color: #176b87;
   float: right;
@@ -121,7 +122,7 @@
 }
 
 #editionClearButton {
-  width: 5cm;
+  width: 4cm;
   height: 1cm;
   background-color: #aeb6bf;
   color: black;
@@ -129,7 +130,7 @@
 }
 
 #editionSubmitButton {
-  width: 5cm;
+  width: 4cm;
   height: 1cm;
   background-color: #176b87;
   float: right;
@@ -142,7 +143,7 @@
 }
 
 #craftClearButton {
-  width: 5cm;
+  width: 4cm;
   height: 1cm;
   background-color: #aeb6bf;
   color: black;
@@ -150,7 +151,7 @@
 }
 
 #craftSubmitButton {
-  width: 5cm;
+  width: 4cm;
   height: 1cm;
   background-color: #176b87;
   float: right;

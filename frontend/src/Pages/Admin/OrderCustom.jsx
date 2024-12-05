@@ -4,16 +4,16 @@ import { PencilSquare, TrashFill, InfoLg } from 'react-bootstrap-icons';
 
 
 
-function Customer () {
-    return (
+function OrderCustom () {
+    return(
         <>
-        <Card className='mt-4'>
+       <Card className='mt-4'>
         <Card.Header style={{backgroundColor:'#ebedef'}}>
-        <Row className='mt-3'><Col className='ms-3'><h4>User</h4></Col></Row>
+        <Row className='mt-3'><Col className='ms-3'><h4>Product Order : Custom</h4></Col></Row>
         <Row className='mb-4'>  <Form className='d-flex'>
             <Form.Control
             type='search'
-            placeholder='Search for user...'
+            placeholder='Search for order...'
             aria-label='Search'
             className='me-3'
             />
@@ -37,8 +37,8 @@ function Customer () {
                 <td></td>
                 <td></td>
                 <td>
-                <Button variant='outline-info' className='ms-2'><InfoLg /></Button>
-                <Button variant='outline-warning' className='ms-2'><PencilSquare /></Button>
+                  <Button variant='outline-info' className='ms-2'><InfoLg /></Button>
+                  <Button variant='outline-warning' className='ms-2'><PencilSquare /></Button>
                   <Button variant='outline-danger' className='ms-2'><TrashFill /></Button>
                 </td>
               </tr>
@@ -67,4 +67,5 @@ function Customer () {
     );
 }
 
-export default Customer;
+export default OrderCustom;
+

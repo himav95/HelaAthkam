@@ -13,6 +13,8 @@ function CraftsmanRequest({ isRequestModalOpen, closeRequestModal }) {
         onHide={closeRequestModal}
         backdrop="static"
         size="xl"
+        scrollable
+        centered
       >
         <Modal.Header id="craftsmanHeader" closeButton>
           <Modal.Title>Craft-Maker Request</Modal.Title>
@@ -21,7 +23,7 @@ function CraftsmanRequest({ isRequestModalOpen, closeRequestModal }) {
         {/* Craftsman request form content */}
         <Modal.Body>
           <Row className="mb-3">
-            <h5 className="text-muted">Craft-Designer Details</h5>
+            <h6 className="text-muted">Craft-Designer Details</h6>
           </Row>
 
           {/* Craftsman request form: Craft designer details. */}
@@ -29,7 +31,7 @@ function CraftsmanRequest({ isRequestModalOpen, closeRequestModal }) {
             <Col></Col>
             {/* Craftsman name */}
             <Col xs={3}>
-              <Form.Group ControlId="name">
+              <Form.Group controlId="name">
                 <Form.Label className="customLabel">
                   Name <Form.Label className="required">*</Form.Label>
                 </Form.Label>
@@ -39,7 +41,7 @@ function CraftsmanRequest({ isRequestModalOpen, closeRequestModal }) {
 
             {/* Craftsman NIC */}
             <Col xs={3}>
-              <Form.Group ControlId="nic">
+              <Form.Group controlId="nic">
                 <Form.Label className="customLabel">
                   NIC <Form.Label className="required">*</Form.Label>
                 </Form.Label>
@@ -50,7 +52,7 @@ function CraftsmanRequest({ isRequestModalOpen, closeRequestModal }) {
             {/* Craftsman email */}
             <Col xs={3}>
               <Form.Group controlId="email">
-                <Form.Label className="customLabel">
+                <Form.Label className="customLabel mb-1">
                   Email <Form.Label></Form.Label>
                 </Form.Label>
                 <Form.Control
@@ -67,7 +69,7 @@ function CraftsmanRequest({ isRequestModalOpen, closeRequestModal }) {
             <Col></Col>
             {/* Craftsman phone number */}
             <Col xs={3}>
-              <Form.Group ControlId="phoneNumber">
+              <Form.Group controlId="phoneNumber">
                 <Form.Label className="customLabel">
                   Phone Number <Form.Label className="required">*</Form.Label>
                 </Form.Label>
@@ -77,7 +79,7 @@ function CraftsmanRequest({ isRequestModalOpen, closeRequestModal }) {
 
             {/* Craftsman address */}
             <Col xs={6}>
-              <Form.Group ControlId="address">
+              <Form.Group controlId="address">
                 <Form.Label className="customLabel">
                   Address <Form.Label className="required">*</Form.Label>
                 </Form.Label>
@@ -91,14 +93,14 @@ function CraftsmanRequest({ isRequestModalOpen, closeRequestModal }) {
 
           {/* Craftsman's product details */}
           <Row className="mb-2">
-            <h5 className="text-muted">Product Details</h5>
+            <h6 className="text-muted">Product Details</h6>
           </Row>
 
           <Row className="mb-3">
             <Col></Col>
             {/* product name */}
             <Col xs={4}>
-              <Form.Group ControlId="productName">
+              <Form.Group controlId="productName">
                 <Form.Label className="customLabel">
                   Name of the Product{' '}
                   <Form.Label className="required">*</Form.Label>
@@ -109,7 +111,7 @@ function CraftsmanRequest({ isRequestModalOpen, closeRequestModal }) {
 
             {/* product category */}
             <Col xs={4}>
-              <Form.Group ControlId="ProdocutCategory">
+              <Form.Group controlId="ProdocutCategory">
                 <Form.Label className="customLabel">
                   Product Category{' '}
                   <Form.Label className="required">*</Form.Label>
@@ -148,7 +150,7 @@ function CraftsmanRequest({ isRequestModalOpen, closeRequestModal }) {
           <Row className="mb-4">
             <Col></Col>
             <Col xs={8}>
-              <FloatingLabel ControlId="floatingTextarea" />
+              <FloatingLabel controlId="floatingTextarea" />
               <Form.Control
                 as="textarea"
                 placeholder="Describe product: size, color, material or message you want to tell etc."
@@ -161,6 +163,7 @@ function CraftsmanRequest({ isRequestModalOpen, closeRequestModal }) {
           <Row>
             <Col>
               <Button
+
                 id="craftClearButton"
                 variant="secondary"
                 className="mx-5"

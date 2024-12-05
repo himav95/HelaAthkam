@@ -19,15 +19,17 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Login from './Forms/Login';
 import SignUp from './Forms/SignUp';
 
-// Admin compone
+// Admin components
 import Dashboard from './Pages/Admin/Dashboard';
 import Order from './Pages/Admin/Order';
+import OrderCustom from './Pages/Admin/OrderCustom';
 import TopNav from './Pages/Admin/Components/TopNav';
 import SideNav from './Pages/Admin/Components/SideNav';
 import CraftMaker from './Pages/Admin/CraftMaker';
 import CraftMakerRequest from './Pages/Admin/CraftMakerRequest';
 import Product from './Pages/Admin/Product';
 import Customer from './Pages/Admin/Customer';
+import UserMessages from './Pages/Admin/UserMessages';
 
 function App() {
   // login and sign up forms modal state and function details.
@@ -52,12 +54,13 @@ function App() {
     );
   };
 
+
   const AdminLayout = ({ children }) => {
     return (
       <>
         <TopNav />
         <Row style={{ margin: 0, height: 'calc(100vh - 50px)' }}>
-          <Col xs={2}>
+          <Col xs={2} style={{backgroundColor: '#d6dbdf'}}>
             <SideNav />
           </Col>
           <Col xs={10}>{children}</Col>
@@ -76,6 +79,7 @@ function App() {
         <Login
           isModalOpen={isLoginModalOpen}
           closeLoginModal={closeLoginModal}
+          openSignModal={openLoginModal}
         />
 
         {/* pass modal state and close function to the sign up component. */}
@@ -140,6 +144,8 @@ function App() {
             }
           />
 
+
+        {/* admin dashboard routes. */}
           <Route
             path="/admin/dashboard"
             element={
@@ -193,10 +199,30 @@ function App() {
               </AdminLayout>
             }
           />
+
+          <Route
+            path='/admin/ordercustom'
+            element={
+              <AdminLayout>
+                <OrderCustom />
+              </AdminLayout>
+            }
+          />
+
+          <Route 
+            path="/admin/usermessages"
+            element={
+              <AdminLayout>
+                <UserMessages />
+              </AdminLayout>
+            }
+          />
         </Routes>
       </BrowserRouter>
     </>
   );
 }
+
+
 
 export default App;

@@ -39,6 +39,7 @@ function NormalOrder({ isNormalModalOpen, closeNormalModal }) {
         backdrop="static"
         size="lg"
         centered
+        scrollable
       >
         <Modal.Header id="normalOrderHeader" closeButton>
           <Modal.Title>
@@ -50,7 +51,7 @@ function NormalOrder({ isNormalModalOpen, closeNormalModal }) {
         <Modal.Body id="normalOrderBody">
           <Row className="mb-3">
             <Col>
-              <h5 className="text-muted">Customer Details</h5>
+              <h6 className="text-muted">Customer Details</h6>
             </Col>
           </Row>
 
@@ -109,7 +110,7 @@ function NormalOrder({ isNormalModalOpen, closeNormalModal }) {
           {/* normal order form: order request details */}
           <Row className="mb-3">
             <Col>
-              <h5 className="text-muted">Order Details</h5>
+              <h6 className="text-muted">Order Details</h6>
             </Col>
           </Row>
           <Row className="mb-3">

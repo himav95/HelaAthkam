@@ -1,4 +1,4 @@
-import { Card, Button, ButtonGroup } from 'react-bootstrap';
+import { Card, Button, ButtonGroup, Pagination } from 'react-bootstrap';
 import { Row, Col } from 'react-bootstrap';
 import Form from 'react-bootstrap/Form';
 
@@ -48,6 +48,9 @@ function Products() {
   //         console.error('Error initiating payment:', error);
   //     }
   // };
+
+
+  // pagination handlers are here.
 
   return (
     <>
@@ -101,14 +104,36 @@ function Products() {
                     productData={productData}
                   />
                   <ButtonGroup
-                    style={{ display: 'flex', justifyContent: 'center' }}
+                    style={{ display: 'flex', justifyContent: 'center'}}
                   >
                     {/* <Button variant="success" onClick={handlePaymentClick}>Buy Now</Button> */}
-                    <Button variant="warning">Add to Cart</Button>
+                    <Button id='cartButton'>Add to Cart</Button>
+                    <Button id='buyButton'>Buy</Button>
                   </ButtonGroup>
                 </Card.Body>
               </Card>
             </Col>
+          </Row>
+
+          <Row>
+            <Col></Col>
+            <Col>
+
+            {/* product pagination here. */}
+
+            <Pagination id='customPagination' size='sm'>
+              <Pagination.First />
+              <Pagination.Prev />
+              <Pagination.Item active>{1}</Pagination.Item>
+              <Pagination.Item>{2}</Pagination.Item>
+              <Pagination.Item>{3}</Pagination.Item>
+              <Pagination.Item>{4}</Pagination.Item>
+              <Pagination.Next />
+              <Pagination.Last />
+            </Pagination>
+
+            </Col>
+            <Col></Col>
           </Row>
         </Card.Body>
       </Card>
