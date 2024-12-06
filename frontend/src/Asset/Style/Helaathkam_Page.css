@@ -95,14 +95,22 @@
   width: 3cm;
   background-color: #f7dc6f;
   color: black;
-  border-color: gray;
+  border: none;
+}
+
+#cartButton:hover {
+  background-color: #f1c40f;
 }
 
 #buyButton {
   width: 3cm;
   background-color: #64CCC5;
-  border-color: #0A749D;
+  border: none;
   color: black;
+}
+
+#buyButton:hover {
+  background-color: #16a085;
 }
 
 #customPagination .page-item.active .page-link {
@@ -156,11 +164,15 @@
   width: 30rem;
   background-color: #176b87;
   border-color: #176b87;
+  border-radius: 1rem !important;
   color: white;
   border-radius: 0%;
   float: center;
   margin-bottom: 3rem;
 }
+
+#joinUsButton:hover {
+  color: aqua;}
 
 #joinUsImg1 {
   height: 15rem;
@@ -196,7 +208,7 @@
   border-style: none;
 }
 
-/* -----Admin Dashboard css is here.----- */
+/* -----Admin page css is here.----- */
 #adminHeader {
   color:;
   height: 4rem;
@@ -205,14 +217,13 @@
  /* Admin : Side nav css */
 .listgroupButton {
   width: 100%;
-  border: none;
+  border: none !important;
   background-color: #64CCC5 !important;
-  border-color: gray !important;
   justify-content: flex-start;
   text-align: left !important;
   padding: 0;
   display: flex;
-  font-size: 12px !important;
+  font-size: 13px !important;
   color: black !important;
   transition: background-color 0.3s ease;
 }
@@ -237,11 +248,15 @@
 
 
 
+
+/* dashboard card css is here. */
+
 #filterCards1 {
   /* width: 10rem; */
   height:8rem !important;
   color: black;
-  background-color: #52be80;
+  border: none;
+  background-color: #f4d03f;
   text-align: center;
   padding: 10px;
 }
@@ -250,6 +265,7 @@
   /* width: 10rem; */
   height:8rem !important;
   color: black;
+  border: none;
   background-color: #45b39d;
   text-align: center;
   padding: 10px;
@@ -259,6 +275,7 @@
   /* width: 10rem; */
   height:8rem !important;
   color: black;
+  border: none;
   background-color: #85c1e9;
   text-align: center;
   padding: 10px;
@@ -268,13 +285,14 @@
   /* width: 10rem; */
   height:8rem !important;
   color: black;
-  background-color: #f4d03f;
+  border: none;
+  background-color: #af7ac5;
   text-align: center;
   padding: 10px;
 }
 
 #filterCards1:hover {
-  background-color: #27ae60;
+  background-color: #f1c40f;
 }
 
 #filterCards2:hover {
@@ -286,7 +304,7 @@
 }
 
 #filterCards4:hover {
-  background-color: #f1c40f;
+  background-color: #9b59b6;
 }
 
 /* Table css */

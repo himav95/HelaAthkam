@@ -31,7 +31,7 @@ function Services() {
               </Col>
 
               <Col xs={9}>
-                <p className="serviceHeadings">Basic Orders</p>
+                <p className="serviceHeadings">Normal Orders</p>
                 <p>
                   Simplify your shopping experience with our Normal Order
                   service. Choose from our carefully curated collection, place

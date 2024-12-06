@@ -36,10 +36,18 @@ function App() {
   const [isLoginModalOpen, setLoginModalOpen] = useState(false);
   const [isSignModalOpen, setSignModalOpen] = useState(false);
 
-  const openLoginModal = () => setLoginModalOpen(true);
+  const openLoginModal = () => {
+    setLoginModalOpen(true);
+    setSignModalOpen(false); // Ensure only one modal open at a time. (Login)
+  };
+
   const closeLoginModal = () => setLoginModalOpen(false);
 
-  const openSignModal = () => setSignModalOpen(true);
+  const openSignModal = () => {
+    setSignModalOpen(true);
+    setLoginModalOpen(false); // Ensure only one modal open at a time. (Sign Up)
+  };
+
   const closeSignModal = () => setSignModalOpen(false);
 
   const Layout = ({ children }) => {
@@ -79,11 +87,21 @@ function App() {
         <Login
           isModalOpen={isLoginModalOpen}
           closeLoginModal={closeLoginModal}
-          openSignModal={openLoginModal}
+          openSignModal={() => {
+            closeLoginModal(); 
+            openSignModal();
+          }}
         />
 
         {/* pass modal state and close function to the sign up component. */}
-        <SignUp isModalOpen={isSignModalOpen} closeSignModal={closeSignModal} />
+        <SignUp 
+          isModalOpen={isSignModalOpen} 
+          closeSignModal={closeSignModal}
+          openLoginModal={() => {
+            closeSignModal();
+            openLoginModal();
+          }}
+        />
 
         {/* Header.jsx pages nav routing */}
         <Routes>

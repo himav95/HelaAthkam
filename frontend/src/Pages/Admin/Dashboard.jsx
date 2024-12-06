@@ -10,7 +10,7 @@ function Dashboard() {
         <Card.Body>
           <Row className="mb-5">
             <Col style={{ textAlign: 'center' }}>
-              <h3>This Week</h3>
+              <h3>Today</h3>
             </Col>
           </Row>
 

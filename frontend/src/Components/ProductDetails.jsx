@@ -1,4 +1,4 @@
-import { Modal } from 'react-bootstrap';
+import { Modal, Row, Col } from 'react-bootstrap';
 import Card from 'react-bootstrap/Card';
 
 // import Hela athkam: form css file here.
@@ -18,7 +18,9 @@ function ProductDetails({
             <Card.Title>{productData?.name}</Card.Title>
             <Card.Text>{productData?.description}</Card.Text>
           </Card.Body>
-          <Card.Footer>Price: {productData?.price}</Card.Footer>
+          <Card.Footer>
+            <Row><Col>Price: {productData?.price}</Col></Row>
+          </Card.Footer>
         </Card>
       </Modal>
     </>

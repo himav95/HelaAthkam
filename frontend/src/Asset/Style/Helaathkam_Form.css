@@ -21,7 +21,7 @@
 }
 
 #loginModalBody {
-  height: 12cm;
+  height: 30rem;
   border-radius: 0%;
   border-style: none;
 }
@@ -41,8 +41,6 @@
 #signUpModal {
   border-radius: 0%; 
   border-style: none;
-  /* width: 70rem; */
-  /* height: 80rem; */
 }
 
 #signUpModalHeader {
@@ -53,6 +51,7 @@
 #signUpModalBody {
   border-radius: 0%;
   border-style: none;
+  height: 30rem;
 }
 
 #signUpButton {

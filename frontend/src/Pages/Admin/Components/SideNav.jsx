@@ -1,4 +1,4 @@
-import { Button, Card } from 'react-bootstrap';
+import { Button, Card} from 'react-bootstrap';
 import { CaretRight} from 'react-bootstrap-icons';
 import { Link, useLocation } from 'react-router-dom';
 import '../../../Asset/Style/Helaathkam_Page.css';
@@ -50,7 +50,7 @@ const SideNav = () => {
 
           <Link to="/admin/customer" style={{width: '100%'}}>
           <Button className={`listgroupButton mb-1 ${isActive('/admin/customer') ? 'active' : ''}`}>
-            <CaretRight className="caretRight1" /> User
+            <CaretRight className="caretRight1" /> Customer
           </Button>
           </Link>
 
@@ -68,9 +68,10 @@ const SideNav = () => {
 
           <Link to="/admin/usermessages" style={{width: '100%'}}>
           <Button className={`listgroupButton mb-1 ${isActive('/admin/usermessages') ? 'active' : ''}`}>
-            <CaretRight className="caretRight1" /> Messages
+            <CaretRight className="caretRight1" /> Messages/Inquiry
           </Button>
           </Link>
+
         </Card.Body>
       </Card>
 

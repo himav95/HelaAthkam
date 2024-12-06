@@ -9,7 +9,7 @@ import { EnvelopeAt, Key } from 'react-bootstrap-icons';
 // import Hela athkam: form css file.
 import '../Asset/Style/Helaathkam_Form.css';
 
-function Login({ isModalOpen, closeLoginModal}) {
+function Login({ isModalOpen, closeLoginModal, openSignModal}) {
   return (
     <>
       {/* login modal */}
@@ -23,7 +23,7 @@ function Login({ isModalOpen, closeLoginModal}) {
       >
         <Modal.Header id="loginModalHeader" closeButton>
           <Modal.Title>
-            <h2 className="text-muted">Welcome back!</h2>
+            <h3 className="text-muted ms-3">Welcome back!</h3>
           </Modal.Title>
         </Modal.Header>
 
@@ -71,7 +71,7 @@ function Login({ isModalOpen, closeLoginModal}) {
           </Row>
 
           {/* login button */}
-          <Row className="justify-content-center mb-5">
+          <Row className="justify-content-center mb-4">
             <Button
               variant="secondary"
               onClick={closeLoginModal}
@@ -82,14 +82,14 @@ function Login({ isModalOpen, closeLoginModal}) {
           </Row>
 
           <Row>
-            <Col className="d-flex justify-content-end align-items-center" >
+            <Col className="d-flex justify-content-center align-items-center" >
               <Form.Label className="text-muted mb-0 me-1">
                 First visit to Hela Athlam?
               </Form.Label>
 
               <Nav.Link 
               as='span' 
-              onClick={() => {closeLoginModal() }} 
+              onClick={() => {closeLoginModal(); openSignModal(); }} 
               style={{cursor: 'pointer', color: 'blue'}}>Sign Up</Nav.Link>
 
               <Form.Label className='text-muted mb-0 ms-1'>here.</Form.Label>

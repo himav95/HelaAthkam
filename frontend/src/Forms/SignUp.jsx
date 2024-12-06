@@ -1,4 +1,4 @@
-import { Modal, Button } from 'react-bootstrap';
+import { Modal, Button, Nav } from 'react-bootstrap';
 import Form from 'react-bootstrap/Form';
 import { Row, Col } from 'react-bootstrap';
 import { InputGroup } from 'react-bootstrap';
@@ -7,7 +7,7 @@ import { EnvelopeAt, Key, Person } from 'react-bootstrap-icons';
 // import Hela athkam: form css file here.
 import '../Asset/Style/Helaathkam_Form.css';
 
-function SignUp({ isModalOpen, closeSignModal }) {
+function SignUp({ isModalOpen, closeSignModal, openLoginModal }) {
   return (
     <>
       {/* sign up modal */}
@@ -21,19 +21,18 @@ function SignUp({ isModalOpen, closeSignModal }) {
       >
         <Modal.Header id="signUpModalHeader" closeButton>
           <Modal.Title>
-            <h2 className="text-muted">First Visit to Hela Athkam?</h2>
+            <h3 className="text-muted ms-3">Welcome to Hela Athkam!</h3>
           </Modal.Title>
         </Modal.Header>
 
         {/* sign up form content within modal body. */}
         <Modal.Body id="signUpModalBody">
-          <Row className="mb-5"></Row>
+          <Row className="mb-4"></Row>
 
-          {/* sign up form full name and email row. */}
-          <Row className="mb-5">
+          {/* full name. */}
+          <Row className="mb-3">
             <Col></Col>
-            {/* full name. */}
-            <Col xs={5}>
+            <Col xs={6}>
               <InputGroup className="mb-3" size='sm'>
                 <InputGroup.Text id="fullName">
                   <Person size={22} color="#176b87" />
@@ -47,10 +46,15 @@ function SignUp({ isModalOpen, closeSignModal }) {
                 />
               </InputGroup>
             </Col>
+            <Col></Col>
+          </Row>
 
-            {/* email. */}
-            <Col xs={5}>
-              <InputGroup className="mb-3" size='sm'>
+          {/* email. */}
+          <Row className='mb-3'>
+            <Col></Col>
+            <Col xs={6}>
+
+            <InputGroup className="mb-3" size='sm'>
                 <InputGroup.Text id="email">
                   <EnvelopeAt size={20} color="#176b87" />
                 </InputGroup.Text>
@@ -65,11 +69,10 @@ function SignUp({ isModalOpen, closeSignModal }) {
             <Col></Col>
           </Row>
 
-          {/* sign up form password and re-password. */}
-          <Row className="mb-5">
+          {/* password */}
+          <Row className="mb-3">
             <Col></Col>
-            {/* password */}
-            <Col xs={5}>
+            <Col xs={6}>
               <InputGroup className="mb-3" size='sm'>
                 <InputGroup.Text id="password1">
                   <Key size={20} color="#176b87" />
@@ -82,15 +85,19 @@ function SignUp({ isModalOpen, closeSignModal }) {
                 />
               </InputGroup>
             </Col>
+            <Col></Col>
+          </Row>
 
-            {/* re-password */}
-            <Col xs={5}>
-              <InputGroup className="mb-3" size='sm'>
+          {/* confirm password */}
+          <Row className='mb-5'>
+            <Col></Col>
+            <Col xs={6}>
+            <InputGroup className="mb-3" size='sm'>
                 <InputGroup.Text id="password2">
                   <Key size={20} color="#176b87" />
                 </InputGroup.Text>
                 <Form.Control
-                  placeholder="Re-Enter Password"
+                  placeholder="Confirm Password"
                   type="password"
                   aria-label="UserPwd2"
                   aria-describedby="password2"
@@ -101,7 +108,7 @@ function SignUp({ isModalOpen, closeSignModal }) {
           </Row>
 
           {/* sign up button. */}
-          <Row className="justify-content-center mb-5">
+          <Row className="justify-content-center mb-3">
             <Button
               variant="secondary"
               onClick={closeSignModal}
@@ -109,6 +116,20 @@ function SignUp({ isModalOpen, closeSignModal }) {
             >
               Sign Up
             </Button>
+          </Row>
+
+          <Row>
+            <Col className='d-flex justify-content-center align-items-center'>
+            <Form.Label className='text-muted mb-0 me-1'>
+              Already have an account?
+            </Form.Label>
+
+            <Nav.Link as="span" onClick={() => {closeSignModal(); openLoginModal(); }}
+            style={{cursor: 'pointer', color: 'blue'}} > Login
+            </Nav.Link>
+
+            <Form.Label className='text-muted mb-0 ms-1'>here.</Form.Label>
+            </Col>
           </Row>
         </Modal.Body>
       </Modal>
