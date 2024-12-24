@@ -43,7 +43,7 @@ function NormalOrder({ isNormalModalOpen, closeNormalModal }) {
       >
         <Modal.Header id="normalOrderHeader" closeButton>
           <Modal.Title>
-            <h3>Order Request</h3>
+            <h3>Order</h3>
           </Modal.Title>
         </Modal.Header>
 

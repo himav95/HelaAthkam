@@ -84,7 +84,7 @@ function Login({ isModalOpen, closeLoginModal, openSignModal}) {
           <Row>
             <Col className="d-flex justify-content-center align-items-center" >
               <Form.Label className="text-muted mb-0 me-1">
-                First visit to Hela Athlam?
+                First visit to Hela Athkam?
               </Form.Label>
 
               <Nav.Link 

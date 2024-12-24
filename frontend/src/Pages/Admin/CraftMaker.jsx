@@ -1,6 +1,6 @@
 import '../../Asset/Style/Helaathkam_Page.css';
 import {Row, Col, Card, Button, Form, Table, Pagination} from 'react-bootstrap';
-import { PencilSquare, TrashFill, InfoLg } from 'react-bootstrap-icons';
+import { PencilSquare, TrashFill, InfoLg, PlusLg } from 'react-bootstrap-icons';
 
 function CraftMaker (){
     return (
@@ -20,6 +20,12 @@ function CraftMaker (){
         </Card.Header>
 
         <Card.Body>
+        <Row className='mb-3'>
+            <Col className='justify-content-end'>
+            <Button variant='outline-success'><PlusLg /> Add New</Button>
+            </Col>
+          </Row>
+
           <Table variant='light' striped bordered hover>
             <thead>
               <tr>

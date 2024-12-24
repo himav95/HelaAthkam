@@ -19,7 +19,7 @@ function CustomOrder({ isCustomModalOpen, closeCustomModal }) {
         {/* className='modal modal-dialog-scrollable' : not sure what suit the most */}
         <Modal.Header id="customOrderHeader" closeButton>
           <Modal.Title>
-            <h3>Custom-Order Request</h3>
+            <h3>Custom-Order</h3>
           </Modal.Title>
         </Modal.Header>
 

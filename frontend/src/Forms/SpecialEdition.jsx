@@ -19,7 +19,7 @@ function SpecialEdit({ isEditionModalOpen, closeEditionModal }) {
         {/* className='modal modal-dialog-scrollable' : not sure what suit the most */}
         <Modal.Header id="specialEditionHeader" closeButton>
           <Modal.Title>
-            <h3>Special Edition Request</h3>
+            <h3>Special Edition Order</h3>
           </Modal.Title>
         </Modal.Header>
 

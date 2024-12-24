@@ -9,20 +9,38 @@
   color: red;
 }
 
-
-
 /* -----Home page css----- */
 
 .backgroundImageContainer {
   background-image: url('../Images/background3.jpg');
+  position: relative;
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  padding: 0;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   min-height: 100vh;
-  margin: 0;
+  margin-left: -112px;
+  margin-right: -112px;
+  margin-top: -66px;
+  z-index: 1;
+}
+
+.backgroundImageContainer::before {
+  content: '';
+  position: absolute;
   width: 100%;
-  
+  height: 100%;
+  background-color: rgba(255, 254, 254, 0.15); /* Adjust color and opacity here */
+  z-index: 1;
+}
+
+.backgroundImageContainer > div {
+  position: relative;
+  margin-top: 60px;
+  z-index: 2; /* Ensure content is above the overlay */
+  color: black;
 }
 
 #carouselBlock {
@@ -104,7 +122,7 @@
 
 #buyButton {
   width: 3cm;
-  background-color: #64CCC5;
+  background-color: #64ccc5;
   border: none;
   color: black;
 }
@@ -116,20 +134,21 @@
 #customPagination .page-item.active .page-link {
   background-color: #176b87;
   border-color: #176b87;
-  
 }
 
 /* -----Order-Online Page css----- */
 #orderContainer {
-  height: 30rem;
+  height: 25rem;
+  margin-bottom: 3rem;
 }
+
 #normalOrderButton {
   width: 15rem;
   height: 3rem;
   background-color: #176b87;
 }
 
-#editionButton {
+#bulkButton {
   width: 15rem;
   height: 3rem;
   background-color: #176b87;
@@ -140,7 +159,7 @@
   height: 3rem;
   background-color: #176b87;
 }
-#editionCardFooter {
+#bulkCardFooter {
   border-style: none;
   background-color: white;
 }
@@ -172,7 +191,8 @@
 }
 
 #joinUsButton:hover {
-  color: aqua;}
+  color: aqua;
+}
 
 #joinUsImg1 {
   height: 15rem;
@@ -210,15 +230,14 @@
 
 /* -----Admin page css is here.----- */
 #adminHeader {
-  color:;
   height: 4rem;
 }
 
- /* Admin : Side nav css */
+/* Admin : Side nav css */
 .listgroupButton {
   width: 100%;
   border: none !important;
-  background-color: #64CCC5 !important;
+  background-color: #64ccc5 !important;
   justify-content: flex-start;
   text-align: left !important;
   padding: 0;
@@ -233,7 +252,7 @@
   color: white !important;
 }
 
-.listgroupButton:active, 
+.listgroupButton:active,
 .listgroupButton.active {
   background-color: #176b87 !important;
   color: white !important;
@@ -243,17 +262,13 @@
   margin-left: 4px;
   margin-right: 5px;
   font-size: small;
-  
 }
-
-
-
 
 /* dashboard card css is here. */
 
 #filterCards1 {
   /* width: 10rem; */
-  height:8rem !important;
+  height: 8rem !important;
   color: black;
   border: none;
   background-color: #f4d03f;
@@ -263,7 +278,7 @@
 
 #filterCards2 {
   /* width: 10rem; */
-  height:8rem !important;
+  height: 8rem !important;
   color: black;
   border: none;
   background-color: #45b39d;
@@ -273,7 +288,7 @@
 
 #filterCards3 {
   /* width: 10rem; */
-  height:8rem !important;
+  height: 8rem !important;
   color: black;
   border: none;
   background-color: #85c1e9;
@@ -283,7 +298,7 @@
 
 #filterCards4 {
   /* width: 10rem; */
-  height:8rem !important;
+  height: 8rem !important;
   color: black;
   border: none;
   background-color: #af7ac5;
@@ -296,11 +311,11 @@
 }
 
 #filterCards2:hover {
-  background-color: #16a085 ;
+  background-color: #16a085;
 }
 
 #filterCards3:hover {
-  background-color:  #3498db;
+  background-color: #3498db;
 }
 
 #filterCards4:hover {
@@ -308,4 +323,3 @@
 }
 
 /* Table css */
-

@@ -1,11 +1,9 @@
 import { useState } from 'react';
-import { Button, Container, Card } from 'react-bootstrap';
-import { Row, Col } from 'react-bootstrap';
-import Accordion from 'react-bootstrap/Accordion';
+import { Button, Container, Card, Row, Col } from 'react-bootstrap';
+
 // import forms here.
 import NormalOrder from '../Forms/NormalOrder';
 import CustomOrder from '../Forms/CustomOrder';
-import SpecialEdition from '../Forms/SpecialEdition';
 
 // import Hela athkam: form css file here.
 import '../Asset/Style/Helaathkam_Form.css';
@@ -14,81 +12,34 @@ import '../Asset/Style/Helaathkam_Form.css';
 import '../Asset/Style/Helaathkam_Page.css';
 
 function OrderOnline() {
-  // Normal, Special edition and Custom order, state and function details.
+  // Normal and Custom order, state and function details.
   const [isNormalModalOpen, setNormalModalOpen] = useState(false);
-  const [isEditionModalOpen, setEditionModalOpen] = useState(false);
   const [isCustomModalOpen, setCustomModalOpen] = useState(false);
 
   const openNormalModal = () => setNormalModalOpen(true);
   const closeNormalModal = () => setNormalModalOpen(false);
-
-  const openEditionModal = () => setEditionModalOpen(true);
-  const closeEditionModal = () => setEditionModalOpen(false);
 
   const openCustomModal = () => setCustomModalOpen(true);
   const closeCustomModal = () => setCustomModalOpen(false);
 
   return (
     <>
-      <h3 className="mb-5">Place a product order...</h3>
-      <p></p>
+      <h3 className="mb-5 ms-3">Place Your Order...</h3>
+      
       <Container id="orderContainer">
-        {/* order request accordion */}
-        <Accordion>
-          {/* normal order request accordion item */}
-          <Accordion.Item eventKey="0">
-            <Accordion.Header className="accordionOrder1">
-              Normal Order
-            </Accordion.Header>
-            <Accordion.Body>
-              <Container>
-                <Row>
-                  <p>
-                    You can pre-order products from our existing product
-                    categories. Have a look on what we have already. See
-                    anything you like?
-                  </p>
-                  <p>Choose and place your order here.</p>
-                </Row>
-                <Row className="justify-content-center mb-5">
-                  <Col xs={2}>
-                    <Button id="normalOrderButton" onClick={openNormalModal}>
-                      Place your order
-                    </Button>
-                    <NormalOrder
-                      isNormalModalOpen={isNormalModalOpen}
-                      closeNormalModal={closeNormalModal}
-                    />
-                  </Col>
-                </Row>
-
-                <Row>
-                  <Col xl={4}>
-                    <p className="text-muted">
-                      <i>Delivery Only Within the City.</i>
-                    </p>
-                  </Col>
-                </Row>
-              </Container>
-            </Accordion.Body>
-          </Accordion.Item>
-
-          {/* custom order request accordion item */}
-          <Accordion.Item eventKey="1">
-            <Accordion.Header>Custom Order</Accordion.Header>
-            <Accordion.Body>
-              <Row className="mb-2">
+        {/* Bulk order */}
+        <Row className="mb-2">
                 <Col>
-                  <Card id="editionCard">
-                    <Row>
+                  <Card id="bulkCard">
+                    <Row className='mt-4'> 
                       <Col></Col>
                       <Col xs={10}>
-                        {/* Inner content of special editon area */}
+                        {/* Inner content of Bulk order area */}
                         <Row className="mb-3">
-                          <h4>Special Edition</h4>
+                          <h4>Bulk Order</h4>
                         </Row>
 
-                        {/* Special edition: Inner content */}
+                        {/* Bulk order: Inner content */}
                         <Row className="mb-3">
                           <Col>
                             <p>
@@ -103,15 +54,15 @@ function OrderOnline() {
                       <Col></Col>
                     </Row>
 
-                    {/* Special edition request button */}
-                    <Card.Footer id="editionCardFooter" className="mb-2">
+                    {/* Bulk order button */}
+                    <Card.Footer id="bulkCardFooter" className="mb-2">
                       <Row className="ms-4">
-                        <Button id="editionButton" onClick={openEditionModal}>
-                          Special Edition
+                        <Button id="bulkButton" onClick={openNormalModal}>
+                          Bulk Order
                         </Button>
-                        <SpecialEdition
-                          isEditionModalOpen={isEditionModalOpen}
-                          closeEditionModal={closeEditionModal}
+                        <NormalOrder
+                          isNormalModalOpen={isNormalModalOpen}
+                          closeNormalModal={closeNormalModal}
                         />
                       </Row>
                     </Card.Footer>
@@ -120,7 +71,7 @@ function OrderOnline() {
 
                 <Col>
                   <Card id="customCard">
-                    <Row>
+                    <Row className="mt-4">
                       <Col></Col>
                       <Col xs={10}>
                         {/*card titles */}
@@ -161,14 +112,8 @@ function OrderOnline() {
                     </Card.Footer>
                   </Card>
                 </Col>
-              </Row>
+        </Row>
 
-              {/* <Row>
-                        <Col xl={4}><p className='text-muted'><i>Delivery Only Within the City.</i></p></Col>
-                    </Row> */}
-            </Accordion.Body>
-          </Accordion.Item>
-        </Accordion>
       </Container>
     </>
   );
