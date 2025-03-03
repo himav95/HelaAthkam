@@ -8,7 +8,7 @@ import { EnvelopeAt, Telephone } from 'react-bootstrap-icons';
 
 function Footer() {
   return (
-    <>
+    
       <Container fluid id="pageFooter">
         <Row></Row>
         <Row className="mt-5">
@@ -93,7 +93,7 @@ function Footer() {
         </Row>
         <Row></Row>
       </Container>
-    </>
+
   );
 }
 
